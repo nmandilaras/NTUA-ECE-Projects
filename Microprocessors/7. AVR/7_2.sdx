@@ -1,0 +1,42 @@
+#include <avr/io.h>
+
+int main ()
+{
+	SP = RAMEND;
+	uint8_t inpt, result, a, b, c, d, e, f_0, f_1, f_2;
+	//PORT D's bits 0-4 as inputs
+	DDRA = 0x00;
+	//PORT C's bits 5-7 as outputs
+	DDRC = 0xFF;
+	//Get input
+	while (1) {
+		inpt = PINA;
+	    result = 0;
+		//locate and align critical bits...
+		a = inpt & 0x01;
+		b = inpt & 0x02;
+		b = b >> 1;
+		c = inpt & 0x04;
+		c = c >> 2;
+		d = inpt & 0x08;
+		d = d >> 3;
+		e = inpt & 0x10;
+		e = e >> 4;
+		f_0 = ~((a & b & c) | (c & d) | (d & e));
+		f_0 = f_0 & 0x01;
+		//update result and shift...
+		result = result + f_0;
+		result = result << 1;
+		f_1 = (a & b) | (c & d & ((~e) & 0x01));
+		//same here
+		result = result + f_1;
+		result = result << 1;
+		f_2 = f_0 | f_1;
+		result = result + f_2;
+		//final shift is five bits
+		//to get to the MSB's
+		result = result << 5;
+		PORTC = result;
+	}
+	return 0;
+}

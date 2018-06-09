@@ -1,0 +1,10 @@
+Total Instructions: 4128219492
+
+
+Branch Predictors: (Name - Correct - Incorrect)
+  Nbit-32K-1: 238577906 6081410
+  Nbit-16K-2: 233363399 11295917
+  Nbit-8K-4: 230933740 13725576
+  Pentium-M: 239274868 5384448
+
+BTB Predictors: (Name - Correct - Incorrect - TargetCorrect)

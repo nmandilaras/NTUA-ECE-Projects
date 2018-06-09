@@ -1,0 +1,57 @@
+BEGIN:	IN 10H			;interrupts are initially disabled
+	MVI H,00H		;here we save the interrupt counter!
+	MVI L,00H		;a safety flag
+	MVI B,00H
+	MVI C,64H		;for the DELB routine
+AGAIN:	MVI A,00H
+LOOPA:	CPI 0FH		;reached a limit?
+	JZ AGAIN
+	MOV D,A		;this checks the switches' MSB
+	LDA 2000H
+	RLC
+	JNC DROP
+	MVI A,0DH
+	SIM
+	EI			;if MSB is set, enable 6.5 interrupts
+STAND:	MOV A,H		;...and properly modify output
+	RLC			;(interrupt count to the left,
+	RLC			;normal count to the right)
+	RLC
+	RLC
+	ADD D
+	CMA			;inverse logic
+	STA 3000H
+	MVI A,0FH		;no interrupts wanted during DELB!
+	SIM
+	DI
+	CALL DELB
+	MOV A,D		;retrieve normal count
+	INR A
+	JMP LOOPA
+DROP:	MVI A,0FH
+	SIM
+	DI
+	JMP STAND
+
+
+INTR_ROUTINE:
+	
+	PUSH D
+	PUSH PSW		;we don't save HL because we NEED H
+	MOV A,L		;check the flag
+	CPI 01H
+	JZ FLAG
+	INR L			;update the flag
+	MOV A,H
+	CPI 0FH
+	JZ INIT
+	INR H
+BACK:	POP PSW
+	POP D
+	RET			;we don't enable interrupts again
+INIT:	MVI H,00H		;trusting the trick above!
+	JMP BACK
+FLAG:	DCR L			;reinitialize flag
+	JMP BACK
+
+	END	

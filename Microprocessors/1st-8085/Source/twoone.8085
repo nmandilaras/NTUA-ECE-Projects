@@ -1,0 +1,50 @@
+	IN 10H
+
+START:	CALL MYON
+	CALL MYOFF
+	JMP START
+
+MYON:	MVI H,00H
+	MVI L,C8H		;minimum delay = 200 msec
+	LDA 2000H
+	ANI F0H
+	RRC
+	RRC
+	RRC
+	RRC			;A now has 4 left MSBs
+	CPI 00H		;check if additional delay is needed
+	JZ SHOOT
+LOOPB:	MVI B,64H		;this loop goes in LOOPA as many times as the 4 MSBs
+LOOPA:	INX H			;this loop adds 100 msecs of delay
+	DCR B
+	JNZ LOOPA
+	DCR A
+	JNZ LOOPB
+SHOOT:	MOV B,H
+	MOV C,L		;(BC) = 200+100x(4 MSBs) msecs
+	MVI A,00H
+	STA 3000H		;light 'em up
+	CALL DELB 
+	RET
+
+MYOFF: MVI H,00H		;similar to MYON, but working with
+	MVI L,C8H		;the 4 LSBs 	
+	LDA 2000H
+	ANI 0FH
+	CPI 00H	
+	JZ SHOOTB
+LOOPC:	MVI B,64H
+LOOPD:	INX H
+	DCR B
+	JNZ LOOPD
+	DCR A
+	JNZ LOOPC
+SHOOTB: MOV B,H
+	MOV C,L		;(BC) = 200+100x(4 MSBs) msecs
+	MVI A,FFH
+	STA 3000H		;kill 'em
+	CALL DELB 
+	RET
+
+	END
+

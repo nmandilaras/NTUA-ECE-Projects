@@ -1,0 +1,20 @@
+BEGIN: IN 10H
+       MVI D,09H
+       MVI E,08H
+
+INP:   CALL KIND
+       CPI 0AH
+       JNZ MLT
+       MOV A,D
+       ADD E
+       MOV D,A
+ 
+MLT:   CPI 0FH
+       JNZ INP
+       MVI A,00H
+AD1:   ADD D
+       DCR E
+       JNZ AD1
+       MOV D,A
+
+END

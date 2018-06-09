@@ -1,0 +1,10 @@
+Total Instructions: 29337086287
+
+
+Branch Predictors: (Name - Correct - Incorrect)
+
+BTB Predictors: (Name - Correct - Incorrect - TargetCorrect)
+  BTB-512-1: 3646768436 828890056 2118497601
+  BTB-256-2: 3713592428 762066064 2193588747
+  BTB-128-4: 3725686918 749971574 2206423701
+  BTB-64-8: 3725694571 749963921 2206433098

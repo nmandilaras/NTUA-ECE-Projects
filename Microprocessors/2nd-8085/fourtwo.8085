@@ -1,0 +1,29 @@
+BEGIN:	IN 10H
+	MVI A,10H	
+	MVI B,04H
+	LXI D,0840H
+
+LOOPA:	STAX D			;load blank char to first 4 disp digits
+	INX D			;(blank code is 10H)
+	DCR B
+       JNZ LOOPA
+
+GOON:	CALL KIND
+	MOV C,A		;save input
+	ANI 0FH		;keep right half of code
+	STAX D
+	MOV A,C
+	ANI F0H
+	RRC
+	RRC
+	RRC
+	RRC
+	INX D
+	STAX D
+	LXI D,0840H
+	CALL STDM
+	CALL DCD
+	LXI D,0844H
+	JMP GOON
+
+	END

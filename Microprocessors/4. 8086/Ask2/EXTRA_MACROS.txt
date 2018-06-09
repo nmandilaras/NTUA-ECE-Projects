@@ -1,0 +1,51 @@
+SCROLL_UP_WIN MACRO START_LIN START_COL END_LIN END_COL UP_NUM
+;messes with AX,BH,CX,DX
+	PUSH AX
+    MOV AH,06H
+    MOV AL,UP_NUM       ;number of lines to scroll up|0->all lines
+    MOV CH,START_LIN
+    MOV CL,START_COL
+    MOV DH,END_LIN
+    MOV DL,END_COL
+    MOV BH,07H          ;attribute:0000(black) bckgrnd clr, 0111(light grey)char clr
+    INT 10H
+	POP AX
+ENDM
+
+SCROLL_DOWN_WIN MACRO START_LIN START_COL END_LIN END_COL UP_NUM
+	PUSH AX
+    MOV AH,07H
+    MOV AL,UP_NUM       ;number of lines to scroll up|0->all lines
+    MOV CH,START_LIN
+    MOV CL,START_COL
+    MOV DH,END_LIN
+    MOV DL,END_COL
+    MOV BH,07H          ;attribute:0000(black) bckgrnd clr, 0111(light grey)char clr
+    INT 10H 
+	POP AX	
+ENDM
+
+READ_NW MACRO
+;messes with AX,DL,returns in AL=char, if ZF=0(there was something to read)
+;reads without echo    
+    MOV AH,06H
+    MOV DL,0FFH
+    INT 21H
+ENDM 
+
+LOCATE MACRO LIN COL PAGE
+;messes with AH,DX,BH
+    MOV AH,02H
+    MOV DH,LIN
+    MOV DL,COL
+    MOV BH,PAGE
+    INT 10H
+ENDM
+
+PRINT_BIOS MACRO CHAR
+    MOV AH,0AH      ;funct code
+    MOV AL,CHAR     
+    MOV BH,00H      ;page num
+    MOV CX,1        ;times we print char
+    INT 10H
+ENDM

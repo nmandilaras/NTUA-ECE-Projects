@@ -1,0 +1,382 @@
+
+AVRGCC1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000019a  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         000006cc  00000000  00000000  000001f0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000090  00000000  00000000  000008bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 00000020  00000000  00000000  0000094c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_pubnames 0000001b  00000000  00000000  0000096c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000000d6  00000000  00000000  00000987  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000006a  00000000  00000000  00000a5d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000291  00000000  00000000  00000ac7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000020  00000000  00000000  00000d58  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000000a5  00000000  00000000  00000d78  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000238  00000000  00000000  00000e1d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_pubtypes 0000002b  00000000  00000000  00001055  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d4 e0       	ldi	r29, 0x04	; 4
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 36 00 	call	0x6c	; 0x6c <main>
+  64:	0c 94 cb 00 	jmp	0x196	; 0x196 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <main>:
+﻿#include <avr/io.h>
+
+int main ()
+{
+  6c:	ef 92       	push	r14
+  6e:	ff 92       	push	r15
+  70:	1f 93       	push	r17
+  72:	cf 93       	push	r28
+  74:	df 93       	push	r29
+  SP = RAMEND;
+  76:	8f e5       	ldi	r24, 0x5F	; 95
+  78:	94 e0       	ldi	r25, 0x04	; 4
+  7a:	9e bf       	out	0x3e, r25	; 62
+  7c:	8d bf       	out	0x3d, r24	; 61
+  int outpt=0, inpt=0, s1=0, s2=0, past;
+  // Set Port D bits as inputs
+  DDRB = 0xff;
+  7e:	8f ef       	ldi	r24, 0xFF	; 255
+  80:	87 bb       	out	0x17, r24	; 23
+  PORTB=0x80;
+  82:	80 e8       	ldi	r24, 0x80	; 128
+  84:	88 bb       	out	0x18, r24	; 24
+  outpt = 0x80;
+  DDRD = 0x00;
+  86:	11 ba       	out	0x11, r1	; 17
+  inpt = PIND;
+  88:	80 b3       	in	r24, 0x10	; 16
+  8a:	90 e0       	ldi	r25, 0x00	; 0
+  past=inpt;
+  8c:	9c 01       	movw	r18, r24
+  SP = RAMEND;
+  int outpt=0, inpt=0, s1=0, s2=0, past;
+  // Set Port D bits as inputs
+  DDRB = 0xff;
+  PORTB=0x80;
+  outpt = 0x80;
+  8e:	40 e8       	ldi	r20, 0x80	; 128
+  90:	50 e0       	ldi	r21, 0x00	; 0
+	// mask bit 4 of current and past input
+	s1 = inpt & 0x10;
+	s2 = past & 0x10;
+	if ((s2 - s1) == (0x10)) {
+		outpt = 0x80;
+		PORTB = outpt;
+  92:	10 e8       	ldi	r17, 0x80	; 128
+  while (1) {
+	// mask bit 4 of current and past input
+	s1 = inpt & 0x10;
+	s2 = past & 0x10;
+	if ((s2 - s1) == (0x10)) {
+		outpt = 0x80;
+  94:	a0 e8       	ldi	r26, 0x80	; 128
+  96:	b0 e0       	ldi	r27, 0x00	; 0
+		if (outpt <= 0b00100000)
+			outpt = outpt * 4;
+		else if (outpt == 0x40)
+			outpt = 0x01;
+		else
+			outpt = 0x02;
+  98:	ee 24       	eor	r14, r14
+  9a:	ff 24       	eor	r15, r15
+  9c:	68 94       	set
+  9e:	e1 f8       	bld	r14, 1
+	s2 = past & 0x08;
+	if ((s2 - s1) == (0x08)) {
+		if (outpt <= 0b00100000)
+			outpt = outpt * 4;
+		else if (outpt == 0x40)
+			outpt = 0x01;
+  a0:	c1 e0       	ldi	r28, 0x01	; 1
+  a2:	d0 e0       	ldi	r29, 0x00	; 0
+  past=inpt;
+
+  while (1) {
+	// mask bit 4 of current and past input
+	s1 = inpt & 0x10;
+	s2 = past & 0x10;
+  a4:	f9 01       	movw	r30, r18
+  a6:	e0 71       	andi	r30, 0x10	; 16
+  a8:	f0 70       	andi	r31, 0x00	; 0
+  inpt = PIND;
+  past=inpt;
+
+  while (1) {
+	// mask bit 4 of current and past input
+	s1 = inpt & 0x10;
+  aa:	bc 01       	movw	r22, r24
+  ac:	60 71       	andi	r22, 0x10	; 16
+  ae:	70 70       	andi	r23, 0x00	; 0
+	s2 = past & 0x10;
+	if ((s2 - s1) == (0x10)) {
+  b0:	e6 1b       	sub	r30, r22
+  b2:	f7 0b       	sbc	r31, r23
+  b4:	e0 31       	cpi	r30, 0x10	; 16
+  b6:	f1 05       	cpc	r31, r1
+  b8:	11 f4       	brne	.+4      	; 0xbe <main+0x52>
+		outpt = 0x80;
+		PORTB = outpt;
+  ba:	18 bb       	out	0x18, r17	; 24
+  while (1) {
+	// mask bit 4 of current and past input
+	s1 = inpt & 0x10;
+	s2 = past & 0x10;
+	if ((s2 - s1) == (0x10)) {
+		outpt = 0x80;
+  bc:	ad 01       	movw	r20, r26
+	//	inpt = PIND;
+		//continue;
+	}
+	// now mask bit 3...
+	s1 = inpt & 0x08;
+	s2 = past & 0x08;
+  be:	f9 01       	movw	r30, r18
+  c0:	e8 70       	andi	r30, 0x08	; 8
+  c2:	f0 70       	andi	r31, 0x00	; 0
+	//	past = inpt;
+	//	inpt = PIND;
+		//continue;
+	}
+	// now mask bit 3...
+	s1 = inpt & 0x08;
+  c4:	bc 01       	movw	r22, r24
+  c6:	68 70       	andi	r22, 0x08	; 8
+  c8:	70 70       	andi	r23, 0x00	; 0
+	s2 = past & 0x08;
+	if ((s2 - s1) == (0x08)) {
+  ca:	e6 1b       	sub	r30, r22
+  cc:	f7 0b       	sbc	r31, r23
+  ce:	e8 30       	cpi	r30, 0x08	; 8
+  d0:	f1 05       	cpc	r31, r1
+  d2:	79 f4       	brne	.+30     	; 0xf2 <main+0x86>
+		if (outpt <= 0b00100000)
+  d4:	41 32       	cpi	r20, 0x21	; 33
+  d6:	51 05       	cpc	r21, r1
+  d8:	2c f4       	brge	.+10     	; 0xe4 <main+0x78>
+			outpt = outpt * 4;
+  da:	44 0f       	add	r20, r20
+  dc:	55 1f       	adc	r21, r21
+  de:	44 0f       	add	r20, r20
+  e0:	55 1f       	adc	r21, r21
+  e2:	06 c0       	rjmp	.+12     	; 0xf0 <main+0x84>
+		else if (outpt == 0x40)
+  e4:	40 34       	cpi	r20, 0x40	; 64
+  e6:	51 05       	cpc	r21, r1
+  e8:	11 f4       	brne	.+4      	; 0xee <main+0x82>
+			outpt = 0x01;
+  ea:	ae 01       	movw	r20, r28
+  ec:	01 c0       	rjmp	.+2      	; 0xf0 <main+0x84>
+		else
+			outpt = 0x02;
+  ee:	a7 01       	movw	r20, r14
+		PORTB = outpt;
+  f0:	48 bb       	out	0x18, r20	; 24
+		//inpt = PIND;
+		//continue;
+	}
+	// now mask bit 2...
+	s1 = inpt & 0x04;
+	s2 = past & 0x04;
+  f2:	f9 01       	movw	r30, r18
+  f4:	e4 70       	andi	r30, 0x04	; 4
+  f6:	f0 70       	andi	r31, 0x00	; 0
+		//past = inpt;
+		//inpt = PIND;
+		//continue;
+	}
+	// now mask bit 2...
+	s1 = inpt & 0x04;
+  f8:	bc 01       	movw	r22, r24
+  fa:	64 70       	andi	r22, 0x04	; 4
+  fc:	70 70       	andi	r23, 0x00	; 0
+	s2 = past & 0x04;
+	if ((s2 - s1) == (0x04)) {
+  fe:	e6 1b       	sub	r30, r22
+ 100:	f7 0b       	sbc	r31, r23
+ 102:	e4 30       	cpi	r30, 0x04	; 4
+ 104:	f1 05       	cpc	r31, r1
+ 106:	b1 f4       	brne	.+44     	; 0x134 <main+0xc8>
+		if (outpt >= 0b00000100)
+ 108:	44 30       	cpi	r20, 0x04	; 4
+ 10a:	51 05       	cpc	r21, r1
+ 10c:	5c f0       	brlt	.+22     	; 0x124 <main+0xb8>
+			outpt = outpt / 4;
+ 10e:	ba 01       	movw	r22, r20
+ 110:	55 23       	and	r21, r21
+ 112:	14 f4       	brge	.+4      	; 0x118 <main+0xac>
+ 114:	6d 5f       	subi	r22, 0xFD	; 253
+ 116:	7f 4f       	sbci	r23, 0xFF	; 255
+ 118:	ab 01       	movw	r20, r22
+ 11a:	55 95       	asr	r21
+ 11c:	47 95       	ror	r20
+ 11e:	55 95       	asr	r21
+ 120:	47 95       	ror	r20
+ 122:	07 c0       	rjmp	.+14     	; 0x132 <main+0xc6>
+		else if (outpt == 0x02)
+ 124:	42 30       	cpi	r20, 0x02	; 2
+ 126:	51 05       	cpc	r21, r1
+ 128:	11 f4       	brne	.+4      	; 0x12e <main+0xc2>
+			outpt = 0x80;
+ 12a:	ad 01       	movw	r20, r26
+ 12c:	02 c0       	rjmp	.+4      	; 0x132 <main+0xc6>
+		else
+			outpt = 0x40;
+ 12e:	40 e4       	ldi	r20, 0x40	; 64
+ 130:	50 e0       	ldi	r21, 0x00	; 0
+		PORTB = outpt;
+ 132:	48 bb       	out	0x18, r20	; 24
+	//	inpt = PIND;
+	//	continue;
+	}
+	// now mask bit 1...
+	s1 = inpt & 0x02;
+	s2 = past & 0x02;
+ 134:	f9 01       	movw	r30, r18
+ 136:	e2 70       	andi	r30, 0x02	; 2
+ 138:	f0 70       	andi	r31, 0x00	; 0
+	//	past = inpt;
+	//	inpt = PIND;
+	//	continue;
+	}
+	// now mask bit 1...
+	s1 = inpt & 0x02;
+ 13a:	bc 01       	movw	r22, r24
+ 13c:	62 70       	andi	r22, 0x02	; 2
+ 13e:	70 70       	andi	r23, 0x00	; 0
+	s2 = past & 0x02;
+	if ((s2 - s1) == (0x02)) {
+ 140:	e6 1b       	sub	r30, r22
+ 142:	f7 0b       	sbc	r31, r23
+ 144:	e2 30       	cpi	r30, 0x02	; 2
+ 146:	f1 05       	cpc	r31, r1
+ 148:	41 f4       	brne	.+16     	; 0x15a <main+0xee>
+		if (outpt <= 0b01000000)
+ 14a:	41 34       	cpi	r20, 0x41	; 65
+ 14c:	51 05       	cpc	r21, r1
+ 14e:	1c f4       	brge	.+6      	; 0x156 <main+0xea>
+			outpt = outpt * 2;
+ 150:	44 0f       	add	r20, r20
+ 152:	55 1f       	adc	r21, r21
+ 154:	01 c0       	rjmp	.+2      	; 0x158 <main+0xec>
+		else
+			outpt = 0x01;
+ 156:	ae 01       	movw	r20, r28
+		PORTB = outpt;
+ 158:	48 bb       	out	0x18, r20	; 24
+		//inpt = PIND;
+	//	continue;
+	}
+	// now mask the LSB...
+	s1 = inpt & 0x01;
+	s2 = past & 0x01;
+ 15a:	21 70       	andi	r18, 0x01	; 1
+ 15c:	30 70       	andi	r19, 0x00	; 0
+		//past = inpt;
+		//inpt = PIND;
+	//	continue;
+	}
+	// now mask the LSB...
+	s1 = inpt & 0x01;
+ 15e:	bc 01       	movw	r22, r24
+ 160:	61 70       	andi	r22, 0x01	; 1
+ 162:	70 70       	andi	r23, 0x00	; 0
+	s2 = past & 0x01;
+	if ((s2 - s1) == (0x01)) {
+ 164:	26 1b       	sub	r18, r22
+ 166:	37 0b       	sbc	r19, r23
+ 168:	21 30       	cpi	r18, 0x01	; 1
+ 16a:	31 05       	cpc	r19, r1
+ 16c:	71 f4       	brne	.+28     	; 0x18a <main+0x11e>
+		if (outpt >= 0b00000010)
+ 16e:	42 30       	cpi	r20, 0x02	; 2
+ 170:	51 05       	cpc	r21, r1
+ 172:	4c f0       	brlt	.+18     	; 0x186 <main+0x11a>
+			outpt = outpt / 2;
+ 174:	9a 01       	movw	r18, r20
+ 176:	55 23       	and	r21, r21
+ 178:	14 f4       	brge	.+4      	; 0x17e <main+0x112>
+ 17a:	2f 5f       	subi	r18, 0xFF	; 255
+ 17c:	3f 4f       	sbci	r19, 0xFF	; 255
+ 17e:	a9 01       	movw	r20, r18
+ 180:	55 95       	asr	r21
+ 182:	47 95       	ror	r20
+ 184:	01 c0       	rjmp	.+2      	; 0x188 <main+0x11c>
+		else
+			outpt = 0x80;
+ 186:	ad 01       	movw	r20, r26
+		PORTB = outpt;
+ 188:	48 bb       	out	0x18, r20	; 24
+		//past = inpt;
+		//inpt = PIND;
+	}
+    past = inpt;
+	inpt = PIND;
+ 18a:	e0 b3       	in	r30, 0x10	; 16
+			outpt = 0x80;
+		PORTB = outpt;
+		//past = inpt;
+		//inpt = PIND;
+	}
+    past = inpt;
+ 18c:	9c 01       	movw	r18, r24
+	inpt = PIND;
+ 18e:	60 e0       	ldi	r22, 0x00	; 0
+ 190:	8e 2f       	mov	r24, r30
+ 192:	96 2f       	mov	r25, r22
+  }
+ 194:	87 cf       	rjmp	.-242    	; 0xa4 <main+0x38>
+
+00000196 <_exit>:
+ 196:	f8 94       	cli
+
+00000198 <__stop_program>:
+ 198:	ff cf       	rjmp	.-2      	; 0x198 <__stop_program>

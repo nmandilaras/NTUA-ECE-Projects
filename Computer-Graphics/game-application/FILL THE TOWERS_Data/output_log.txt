@@ -1,0 +1,3447 @@
+Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: ATI Mobility Radeon HD 4650 (ID=0x9480)
+    Vendor:   ATI
+    VRAM:     1017 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\OneDrive\ECE\Dropbox\roh_L\Γραφική\παιχνίδι εργασία\FILL THE TOWERS_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\OneDrive\ECE\Dropbox\roh_L\Γραφική\παιχνίδι εργασία\FILL THE TOWERS_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\OneDrive\ECE\Dropbox\roh_L\Γραφική\παιχνίδι εργασία\FILL THE TOWERS_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\OneDrive\ECE\Dropbox\roh_L\Γραφική\παιχνίδι εργασία\FILL THE TOWERS_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: D:\OneDrive\ECE\Dropbox\roh_L\Γραφική\παιχνίδι εργασία\FILL THE TOWERS_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\OneDrive\ECE\Dropbox\roh_L\Γραφική\παιχνίδι εργασία\FILL THE TOWERS_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.137 seconds
+desktop: 1600x900 60Hz; virtual: 3040x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\OneDrive\ECE\Dropbox\roh_L\Γραφική\παιχνίδι εργασία\FILL THE TOWERS_Data\Managed\System.Core.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at hero..ctor () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Platform assembly: D:\OneDrive\ECE\Dropbox\roh_L\Γραφική\παιχνίδι εργασία\FILL THE TOWERS_Data\Managed\Boo.Lang.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at hero.Main () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1834 -> priority: 1 
+Hero 2 chosen
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.0, 0.0, -5.0) Grid Position: (-8.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero0 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.0, 0.0, -5.0) Grid Position: (-8.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero1 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-2.8, 0.0, -8.5) Grid Position: (-2.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero2 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.2, 0.0, -9.0) Grid Position: (4.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero3 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.2, 0.0, -9.0) Grid Position: (4.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero4 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.2, 0.0, -9.0) Grid Position: (4.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero5 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.2, 0.0, -9.1) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero6 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.2, 0.0, -9.1) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero7 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.2, 0.0, -9.1) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero8 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.2, 0.0, -9.1) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero9 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (10.8, 0.0, 2.1) Grid Position: (10.0, 0.0, 2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero10 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (10.7, 0.0, 1.9) Grid Position: (10.0, 0.0, 2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero11 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.4, 0.0, -1.1) Grid Position: (8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero12 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.4, 0.0, -1.1) Grid Position: (8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero13 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.4, 0.0, -1.1) Grid Position: (8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero14 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.4, 0.0, -1.1) Grid Position: (8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero15 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.4, 0.0, -1.1) Grid Position: (8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero16 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.6, 0.0, -4.6) Grid Position: (6.0, 0.0, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero17 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.6, 0.0, -4.7) Grid Position: (6.0, 0.0, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero18 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (4.7, 0.5, -7.2) Grid Position: (4.0, 0.5, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero19 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (4.7, 0.5, -7.2) Grid Position: (4.0, 0.5, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero20 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-9.6, 0.0, -1.1) Grid Position: (-10.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero21 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-9.5, 0.0, -0.3) Grid Position: (-10.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero22 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-9.5, 0.0, -0.3) Grid Position: (-10.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero23 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-9.4, 0.0, -0.6) Grid Position: (-10.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero24 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-9.4, 0.0, -0.6) Grid Position: (-10.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero25 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-9.4, 0.0, -0.6) Grid Position: (-10.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero26 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.6, 0.0, -4.8) Grid Position: (-6.0, 0.0, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero27 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.3, 0.0, -5.7) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero28 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.3, 0.0, -5.7) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero29 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.1, 0.0, -3.2) Grid Position: (-8.0, 0.0, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero30 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.1, 0.0, -3.2) Grid Position: (-8.0, 0.0, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero31 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.1, 0.0, -3.2) Grid Position: (-8.0, 0.0, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero32 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at hero.FindClosestGreenEnemy (UnityEngine.GameObject whichObject) [0x00000] in <filename unknown>:0 
+  at hero.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Hero 1 chosen
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-2.8, 0.0, -9.4) Grid Position: (-2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero33 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-2.8, 0.0, -9.4) Grid Position: (-2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero34 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.3, 0.0, -8.6) Grid Position: (4.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero35 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.3, 0.0, -8.6) Grid Position: (4.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero36 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.3, 0.0, -8.6) Grid Position: (4.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero37 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.4, 0.0, -9.3) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero38 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.4, 0.0, -9.3) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero39 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.0, 0.0, -9.0) Grid Position: (0.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero40 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-0.1, 0.0, -8.9) Grid Position: (0.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero41 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-0.1, 0.0, -8.9) Grid Position: (0.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero42 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (2.0, 0.0, -6.7) Grid Position: (2.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero43 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (2.0, 0.0, -6.7) Grid Position: (2.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero44 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, 0.6) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero45 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, 0.6) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero46 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, 0.6) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero47 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, 0.6) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero48 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, 0.6) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero49 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, 0.6) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero50 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, 0.6) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero51 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, 0.6) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero52 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, 0.6) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero53 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.7, 0.0, 3.7) Grid Position: (8.0, 0.0, 4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero54 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.7, 0.0, 3.7) Grid Position: (8.0, 0.0, 4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero55 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.7, 0.0, 3.7) Grid Position: (8.0, 0.0, 4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero56 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-0.6, 0.0, -11.8) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero57 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-0.7, 0.0, -11.8) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero58 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-0.7, 0.0, -11.8) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero59 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-0.7, 0.0, -11.8) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero60 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-0.7, 0.0, -11.8) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero61 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-0.8, 0.0, -11.7) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero62 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.4, 0.0, -3.7) Grid Position: (-6.0, 0.0, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero63 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.4, 0.0, -4.2) Grid Position: (-6.0, 0.0, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero64 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.3, 0.0, -5.0) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero65 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.3, 0.0, -5.0) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero66 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.3, 0.0, -5.0) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero67 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.3, 0.0, -5.0) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero68 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.7, 0.0, -1.0) Grid Position: (-6.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero69 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.7, 0.0, -1.0) Grid Position: (-6.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero70 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.7, 0.0, -1.0) Grid Position: (-6.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero71 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.4, 0.0, -11.8) Grid Position: (2.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero72 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.6, 0.0, -11.8) Grid Position: (4.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero73 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (0.6, 0.0, -11.3) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero74 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.6, 0.0, -10.8) Grid Position: (-6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero75 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.6, 0.0, -10.8) Grid Position: (-6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero76 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.6, 0.0, -10.8) Grid Position: (-6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero77 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.1, 0.0, -10.2) Grid Position: (-8.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero78 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-4.7, 0.0, -8.0) Grid Position: (-4.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero79 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-1.5, 0.0, -9.0) Grid Position: (-2.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero80 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-1.4, 0.0, -9.1) Grid Position: (-2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero81 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (2.8, 0.0, -10.5) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero82 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (2.8, 0.0, -10.5) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero83 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.4, 0.0, -10.0) Grid Position: (4.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero84 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.4, 0.0, -10.0) Grid Position: (4.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero85 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, -7.1) Grid Position: (8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero86 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.7, 0.0, -7.1) Grid Position: (8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero87 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.7, 0.0, -9.3) Grid Position: (4.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero88 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.5, 0.0, -9.4) Grid Position: (4.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero89 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.6, 0.0, -9.6) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero90 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.3, 0.0, -9.7) Grid Position: (2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero91 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-3.1, 0.0, -9.7) Grid Position: (-4.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero92 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.0, 0.0, -9.0) Grid Position: (-6.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero93 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.5, 0.0, -7.8) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero94 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero95 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hero 2 chosen
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at hero.FindClosestGreenEnemy (UnityEngine.GameObject whichObject) [0x00000] in <filename unknown>:0 
+  at hero.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Hero 1 chosen
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-3.9, 0.2, -4.5) Grid Position: (-4.0, 0.2, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at hero.FindClosestEnemy (UnityEngine.GameObject whichObject) [0x00000] in <filename unknown>:0 
+  at hero.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Hit point: (-3.9, 0.2, -4.5) Grid Position: (-4.0, 0.2, -4.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at hero.FindClosestEnemy (UnityEngine.GameObject whichObject) [0x00000] in <filename unknown>:0 
+  at hero.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Hit point: (-5.1, 0.0, -8.3) Grid Position: (-6.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero96 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.1, 0.0, -8.3) Grid Position: (-6.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero97 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.1, 0.0, -8.3) Grid Position: (-6.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero98 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (1.3, 0.0, -11.1) Grid Position: (2.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero99 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.5, 0.0, -10.7) Grid Position: (6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero100 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.9, 0.0, -10.3) Grid Position: (6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero101 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.9, 0.0, -10.3) Grid Position: (6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero102 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.9, 0.0, -10.3) Grid Position: (6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero103 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.9, 0.0, -10.3) Grid Position: (6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero104 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.9, 0.0, -10.3) Grid Position: (6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero105 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero106 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero107 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero108 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero109 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero110 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero111 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero112 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero113 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero114 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero115 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.4, 0.0, -7.0) Grid Position: (-8.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero116 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero117 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hero 2 chosen
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.2, 0.0, -10.0) Grid Position: (-6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero118 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.2, 0.0, -10.0) Grid Position: (-6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero119 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-4.6, 0.0, -10.3) Grid Position: (-4.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero120 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (0.1, 0.0, -11.9) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero121 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (0.1, 0.0, -11.9) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero122 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.7, 0.0, -11.8) Grid Position: (4.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero123 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.7, 0.0, -11.8) Grid Position: (4.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero124 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (3.7, 0.0, -11.8) Grid Position: (4.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero125 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-3.8, 0.0, -10.8) Grid Position: (-4.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero126 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-4.0, 0.0, -10.8) Grid Position: (-4.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero127 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.2, 0.0, -10.8) Grid Position: (-6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero128 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-5.9, 0.0, -10.8) Grid Position: (-6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero129 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.1, 0.0, -10.8) Grid Position: (-6.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero130 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (0.6, 0.0, -11.2) Grid Position: (0.0, 0.0, -12.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero131 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero132 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at hero..ctor () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.135937 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 281.
+Total: 0.286550 ms (FindLiveObjects: 0.068429 ms CreateObjectMapping: 0.027799 ms MarkObjects: 0.170219 ms  DeleteObjects: 0.015396 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at hero.Main () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Hit point: (-6.0, 0.0, -5.3) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero0 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.0, 0.0, -5.3) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero1 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.0, 0.0, -5.3) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero2 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.0, 0.0, -5.3) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero3 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.0, 0.0, -5.3) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero4 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-6.0, 0.0, -5.3) Grid Position: (-6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero5 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-1.5, 0.0, -10.6) Grid Position: (-2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero6 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-1.5, 0.0, -10.6) Grid Position: (-2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero7 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.6, 0.0, -0.8) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero8 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.6, 0.0, -0.8) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero9 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.6, 0.0, -0.8) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero10 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (7.6, 0.0, -0.8) Grid Position: (8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero11 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero12 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero13 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero14 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero15 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero16 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero17 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero18 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero19 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero20 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero21 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-8.6, 0.0, -0.4) Grid Position: (-8.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero22 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.8, 0.0, -1.4) Grid Position: (-8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero23 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.8, 0.0, -1.4) Grid Position: (-8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero24 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-7.8, 0.0, -1.4) Grid Position: (-8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero25 will move to Cube 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-1.2, 0.0, -9.1) Grid Position: (-2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero26 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-1.2, 0.0, -9.1) Grid Position: (-2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero27 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-1.2, 0.0, -9.1) Grid Position: (-2.0, 0.0, -10.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero28 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.4, 0.0, -6.9) Grid Position: (6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero29 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.4, 0.0, -6.9) Grid Position: (6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero30 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (6.4, 0.0, -6.9) Grid Position: (6.0, 0.0, -6.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero31 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.3, 0.0, -1.3) Grid Position: (8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero32 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.3, 0.0, -1.3) Grid Position: (8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero33 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.3, 0.0, -1.3) Grid Position: (8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero34 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (8.3, 0.0, -1.3) Grid Position: (8.0, 0.0, -2.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero35 will move to Cube
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (4.9, 0.7, -7.2) Grid Position: (4.0, 0.7, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero36 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (4.8, 0.6, -7.3) Grid Position: (4.0, 0.6, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero37 will move to Cube 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-0.9, 0.0, -8.8) Grid Position: (0.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero38 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-1.0, 0.0, -8.8) Grid Position: (0.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero39 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Hit point: (-1.0, 0.0, -8.8) Grid Position: (0.0, 0.0, -8.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+object Hero40 will move to Cube 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at hero.FindClosestGreenEnemy (UnityEngine.GameObject whichObject) [0x00000] in <filename unknown>:0 
+  at hero.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

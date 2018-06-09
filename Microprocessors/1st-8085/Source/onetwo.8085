@@ -1,0 +1,17 @@
+	CALL BEEP	;first beep
+
+	MVI B,03H	;(BC)==1000
+	MVI C,E8H
+
+START: MVI A,00H	;our counter
+
+LOOPA: CALL DELB	;delay of (BC)x1ms==1 sec
+	INR A		;one more second
+	CMA		;LEDs function with inverse logic
+	STA 3000H	;update output
+	CMA		;restore counter
+	CPI 0FH	;did we reach 15?
+	JZ START	;if yes, reinitialize counter
+	JMP LOOPA	;else continue
+
+	END

@@ -1,0 +1,68 @@
+BEGIN:	IN 10H
+
+LOOPA:	MVI H,00H	;H will have the final result
+	MVI L,00H	;just a flag
+	MVI B,00H	;...and another
+	LDA 2000H
+	RRC
+	JNC G10	;zero determines AND output
+	RRC
+	JC G11		;same here
+	JMP FIX1
+G11:	INR B		;remember the first result
+FIX1:	RLC
+G10:	RRC		;else let it be. check second gate
+	RRC
+	JNC G20	;same way as before
+	RRC
+	JC G21
+	JMP FIX2
+G21:	MOV D,A	;whatever G1 was, set second gate
+	MOV A,B
+	CPI 01H	;was the first gate an ace?
+	JZ CONT	;if yes, do nothing
+	INR H		;if not, set the XOR
+CONT:	MOV A,H	;we have to add 2 to H
+	ADI 02H
+	MOV H,A	;update H
+	MOV A,D	;retrieve input
+FIX2:	RLC
+G20:	MOV D,A
+	MOV A,B
+	CPI 00H	;we check what the XOR will be
+	JZ DONT	;in this case, same as before
+	INR H
+DONT:	MOV A,D
+	RRC
+	RRC
+	JC G31		;G3 is OR, so an ace determines it
+	RRC
+	JNC FIX3
+	INR L
+G31:	MOV D,A	;we just set G3 by adding 4 to the result
+	MOV A,H
+	ADI 04H
+	MOV H,A
+	MOV A,L	;check the flag
+	CPI 01H
+	JZ FIX4
+	MOV A,D
+G30:	RRC
+	RRC
+	JC G41
+	RRC
+	JNC LOAD
+G41:	MOV A,H
+	ADI 08H
+SHOOT:	CMA		;inverse logic!
+	STA 3000H
+	JMP LOOPA
+
+FIX4:	MOV A,D
+FIX3:	RLC
+	JMP G30
+
+LOAD:	MOV A,H
+	JMP SHOOT
+
+	END
