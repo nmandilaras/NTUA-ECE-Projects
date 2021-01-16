@@ -1,0 +1,28 @@
+#include "outlib.inc"
+
+void main()
+	integer mark[1001], i, n;
+{
+	i=0;
+	while (i<=1000) {
+		mark[i]=0;
+		i=i+1;
+	}
+
+	PutInteger(1);
+	PutString("\t");
+	n=2;
+	while (n<=1000) {
+		if (mark[n]==0) {
+			PutInteger(n);
+			PutString("\t");
+			i=n;
+			while (i<=1000) {
+				mark[i]=1;
+				i=i+n;
+			}
+		}
+		n=n+1;
+	}
+	return;
+}

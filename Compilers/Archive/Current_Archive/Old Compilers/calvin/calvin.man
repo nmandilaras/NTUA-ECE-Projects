@@ -1,0 +1,67 @@
+.TH calvin 1 "\*(Dt" "Calvin Compiler" "Compilers Course - Group 1"
+.SH NAME
+calvin \- Calvin Compiler (version 1.0)
+.SH SYNOPSIS
+.B calvin
+.RI "[ " -i " | " -f " | " filename.clv " ]"
+.br
+.SH DESCRIPTION
+.B calvin
+is a compiler for Calvin, a procedural block-structured
+programming language with Pascal-like scoping rules
+and a C-like syntax. Calvin source files are compiled into real-mode
+single-segment x86 assembly, suitable for conversion into an MS-DOS .COM
+executable. This compiler was developed as a project for the Compilers
+Course in the ECE department of the NTUA.
+.SH OPTIONS
+Exactly one command line argument is required. If any of the two options is
+used, Calvin source code is read from standard input and the result of the 
+compilation is written to standard output. The option used determines the kind of
+code produced by the compiler:
+.TP
+.B "\-i "
+Compile Calvin source into intermediate code (Quadruples)
+.TP
+.B "\-f "
+Compile Calvin source into final code (x86 assembly)
+.PP
+If no options are used, then the Calvin source code in
+.I filename.clv
+is compiled into intermediate code (stored in 
+.I filename.imm\c
+) and final x86 assembly code (stored in 
+.I filename.asm\c
+). With no arguments, a short help message is displayed.
+
+.SH EXECUTING FINAL CODE
+The following steps must be taken in order to convert the final code produced
+by
+.B calvin
+into an MS-DOS .COM executable:
+.PP
+.I filename.asm
+must be assembled into an object file using an x86 assembler (eg.
+Microsoft\'s MASM)
+.PP
+The resulting object file must be linked against the Calvin I/O Library
+.I calvin.lib
+.PP
+The .EXE file produced by the linker must be converted to a .COM executable
+using 
+.B exe2bin
+.
+.SH BUGS
+Although this compiler has undergone many hours of rigorous testing (yeah,
+right...) it is possible that it still contains bugs. If you think you have
+found a bug in
+.B calvin
+please send a bug report to
+the authors along with the corresponding Calvin source code, so that we can
+reproduce and repair the problem.
+.SH AUTHORS
+Koutsoloukas Eleftherios (left0s@softlab.ntua.gr)
+.br
+Koukis Evangelos (vkoukis@softlab.ntua.gr)
+.SH "SEE ALSO"
+gcc(1), flex(1), bison(1).
+

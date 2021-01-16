@@ -1,0 +1,2 @@
+llc-3.4 -filetype=obj out.ll
+clang-3.5 out.o lib.a  -o out

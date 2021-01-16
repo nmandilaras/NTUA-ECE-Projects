@@ -1,0 +1,14 @@
+#include "stdio.h"
+
+void main(){
+int a;
+char c;
+a =1;
+writeString("Enter a character?\n");
+c = readChar();	
+a = readInteger();
+if(a==0){
+	writeString("If you didn't entered zero there is a zero leak..\n");
+}
+
+}

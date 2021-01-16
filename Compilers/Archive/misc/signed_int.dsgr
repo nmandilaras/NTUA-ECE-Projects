@@ -1,0 +1,31 @@
+#include "stdio.h"
+
+void main(){
+int a,q,d;
+char c;
+bool x;
+writeString("Insert a?\n");
+a = readInteger();
+d = -1;
+writeString("a equals:\n");
+writeInteger(a);
+writeString("\n");
+q = -1 ;
+writeString("(q,d) equals: (");
+writeInteger(q);
+writeString(",");
+writeInteger(d);
+writeString(")");
+writeString("\n");
+if(a==q){
+	writeString("a == q\n");
+}else{
+	writeString("a != q\n");
+}
+if(q==d){
+	writeString("q == d\n");
+}
+else{
+	writeString("q != d\n");
+}
+}

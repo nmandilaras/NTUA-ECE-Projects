@@ -1,0 +1,28 @@
+void main ()
+{
+  void reverse (char * s, char * r)
+  {
+    int i, l;
+    for (i = 0, l = strlen(s); i < l; i++)
+    r[i] = s[l-i-1];
+    r[i] = '\0';
+    a='a';
+    a=5+7+3;
+   }
+  char p [20];
+  reverse("\n!dlrow olleH", p);
+  writeString(p);
+}
+
+/*
+
+"\""            { printf("String %s",yytext); BEGIN(S_STRING); }
+<S_STRING>"\"" { printf("%s\n",yytext); BEGIN(INITIAL); }
+<S_STRING>\n { printf("ERROR: Strings cannot be extended in more than one line or with simle words:%s\n",yytext); BEGIN(ERROR);  }
+<S_STRING>.    {printf("%s",yytext); }
+
+<ERROR>{
+}
+
+\"([^\\\"]|\\.)*\"	printf("String %s\n",yytext);      // L?\"(\\.|[^\\"])*\"  gia sxolia poy ektinontai se polles grammes
+

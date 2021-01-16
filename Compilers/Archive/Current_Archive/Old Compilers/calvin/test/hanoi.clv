@@ -1,0 +1,29 @@
+#include "outlib.inc"
+
+void main()
+	integer NumberOfRings;
+
+	void hanoi(char source[], char target[], char auxiliary[], integer rings)
+		void move(char source[], char target[])
+		{
+			PutString("Move from ");
+			PutString(source);
+			PutString(" to ");
+			PutString(target);
+			PutString(".\n");
+		}
+	{
+		if (rings<1)
+			return;
+		else {
+			hanoi(source, auxiliary, target, rings-1);
+			move(source, target);
+			hanoi(auxiliary, target, source, rings-1);
+		}
+	}
+{
+	PutString("Please give the number of rings: ");
+	NumberOfRings = GetInteger();
+	PutString("\nHere is the solution: \n\n");
+	hanoi("left", "right", "middle", NumberOfRings);
+}

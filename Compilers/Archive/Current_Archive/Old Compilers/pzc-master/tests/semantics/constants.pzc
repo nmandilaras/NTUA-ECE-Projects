@@ -1,0 +1,81 @@
+const int l = '4' + '6'; 
+const int lk = 'j'; 
+int jjjj;
+REAL jjjk;
+char jjjl;
+bool jjjp;
+bool jjje[5][13];
+
+/* OUTPUT:
+    true
+    a b c b a 97 -97
+    true
+    9
+    64.641592653589797
+    true
+*/
+
+PROGRAM ops ()
+{
+    /* Constant expressions and expressions with constants */
+
+    const char kk = 54;    
+    const bool jk = ('4' + '6') == 'j' ;
+    const bool jj = l == lk;
+    const bool boo = true or false;
+    const bool boon = true and true;
+    const bool asdasd = !false;
+    const bool asdasd2 = !true or true;
+    const bool g = boon || boo;
+    WRITELN(g && false || (true && jk)); // true
+
+    // lookups
+    bool ndk = jj or boo and boon ; 
+    ndk = ndk; 
+    jjjj = jjjj +1;
+    jjjj = jjjj ;
+
+    char n = 'a';                   
+    char p = -'a';                  
+    char pp = -(-'a');              
+    char ppp = -(-(-'a'));          
+    char pppp = -(-(-(-'a')));      
+    WRITESPLN('a', 'b', 'c', "b", pppp, +pppp, -pppp);
+    // a b c b a 97 -97
+    
+    bool a = !false;                
+    bool pk = not not true;         
+    bool pkk = not ! not true;      
+    bool b = not (false and true or (false or true) and false or true); 
+    WRITELN(not ! not b); // true
+
+    int jak = lk - pppp;
+    WRITELN(jak); // 9
+
+    // signed binops and casts
+    REAL k = -3 + 2;               
+    REAL k0 = 3 - (-2);            
+    REAL ka = -3 * 2;              
+    REAL kb = 4 * 3 / -2 ;         
+    REAL kc = 44 + (-2);           
+    REAL d = 13.0 + 1 * 'a' / 2.0 ;
+    WRITELN(FORM(d + fabs(-pi()), 0, 15)); // 61.64159
+
+    bool ddk = -2 < 15;             // true
+    bool ddj = -152 < -151;         // true
+    bool ddl = -152 <= -152;        // true
+    bool ddr = 152 > -152;          // true
+    bool ddp = -23.1 < 11.5432;     // true
+    bool ddq = 1 == 1;              // true
+    bool ddo = -152 >= -152;        // true
+    bool ddz = -152 > -152;         // false
+    bool ddx = -152 != -152;        // false
+
+    // Boolean operations with lookups
+    
+    ddx = ddj and ddr and ddk and ddl and (ddz or ddo and ddp);
+    WRITELN(!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ddx); //true
+    
+    char c = 's';
+    char s[10];
+}

@@ -1,0 +1,16 @@
+must add code to rules:
+ T_new type opt_expression:
+
+T_delete expression:
+
+ expression '?' expression ':' expression:
+
+'(' type ')' expression
+
+
+
+
+&&
+
+also must determine how alloc_ptr work so to have good addressing when using has_address and adr.
+Must make sure that store(a,b) requires a ptr_b and a val a.

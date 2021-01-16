@@ -1,0 +1,16 @@
+void main ()
+{
+ int *p,m,k,l;
+ int a[7]; 
+ int i,j;
+int giannis(byref int i) {
+	google: for(i=0; i< 10; i++) {
+			for(; ;) {
+				continue google;
+			}
+		}
+	
+	}
+p = new int [5];
+delete a;
+}

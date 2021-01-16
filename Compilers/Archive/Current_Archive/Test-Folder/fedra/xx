@@ -1,0 +1,1 @@
+clang  -S -emit-llvm input.c -o out.ll

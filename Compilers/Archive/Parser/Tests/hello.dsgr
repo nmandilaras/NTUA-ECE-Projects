@@ -1,0 +1,6 @@
+void main ()
+{ 
+  4+5;
+  writeString("hello world !" );
+}
+

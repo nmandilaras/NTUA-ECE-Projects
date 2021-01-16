@@ -1,0 +1,42 @@
+#include "stdio.h"
+void main ()
+{
+	int n, k, i, seed;
+	double sum;
+	writeString("Give n: ");
+	n = readInteger();
+	writeString("Give k: ");
+	k = readInteger();
+
+	writeString("This is real :");
+	writeReal(4.642);
+	writeString("\n");
+	for (i = 0, sum = 0.0, seed = 65; i < k; i++){
+		seed = (seed * 137 + 221 + i) % n;
+		writeString("i = ");
+		writeInteger(i);
+		writeString(" seed = ");
+		writeInteger(seed);
+		writeString("   (double) seed = ");
+		writeReal((double) seed);
+		writeString("\n");
+		sum += (double) (seed);
+	}
+	if (5 > 0) {	
+		writeString("Sum is: ");
+		writeReal(sum);
+		writeString("\n");
+		writeString("i is : ");
+		writeInteger(i);
+		writeString("\n");
+		writeString("Mean take 1: ");
+		writeInteger((int) (sum/i));
+		writeString("\n");
+		writeString("Mean take 2: ");
+		writeInteger(((int) sum)/(i));
+		writeString("\n");
+		writeString("Mean take 5: ");
+		writeReal(sum /  i);
+		writeString("\n");
+	}
+}

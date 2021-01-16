@@ -1,0 +1,29 @@
+FUNC int tocall() {
+    return 1;
+}
+
+PROGRAM exprs ()
+{
+/*  var_inits */
+//    int z[10];
+//    int y[10][n], kk[n];
+//    z = y2[10];
+    int l = 10;
+    char c = 5; 
+    bool d = false || true;
+    int i = 's'; 
+    
+    i = (3 + 4) * 2 + 5 / 5;  // 15
+    d = (d == d) and true == false or true;  // true
+//   i = tocall(3);
+
+    /* Lookup and Cast Tests */
+    int y2[25][11][10];
+    int j = 5;          // 5
+    y2[22][5][2] = 1;
+    j = j + y2[22][5][2];
+    REAL k = j + 1.2;   // 6.2
+    char t = 'a';       // 97
+    k = k + 120.3 - t;  
+    
+}

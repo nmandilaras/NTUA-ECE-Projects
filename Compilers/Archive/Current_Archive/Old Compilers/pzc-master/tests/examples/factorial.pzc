@@ -1,0 +1,15 @@
+FUNC int fact (int n)
+{
+    if (n == 0)
+        return 1;
+    else
+        return n * fact(n-1);
+}
+
+PROGRAM factorial ()
+{
+    WRITE("Please enter a number to get its factorial: ");
+    int n = READ_INT();
+    WRITELN();
+    WRITESPLN("The factorial of", n, "is", fact(n));
+}

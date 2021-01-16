@@ -1,0 +1,21 @@
+const int n = 10;
+
+FUNC int tocall(int hi);
+
+PROGRAM exprs ()
+{
+    // var_inits
+    int y[10][n], kk[n];
+    int y2[10][10];
+    int l = n;
+    REAL k = 15;
+    char c = 5; 
+    bool d = false || true;
+    int i = 's'; 
+    
+    WRITELN(tocall(3)); // 1
+}
+
+FUNC int tocall(int hi) {
+    return 1;
+}

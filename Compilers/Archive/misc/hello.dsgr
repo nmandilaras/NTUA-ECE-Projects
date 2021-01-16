@@ -1,0 +1,19 @@
+int manos(byref int a){
+	return 0;
+}
+void main ()
+{
+	int x;
+	int manolis(int c, byref int q){
+		int rixardos(byref int c, byref int a){
+			c = a;	
+		}
+		rixardos(q,q);
+		return rixardos(q,q);
+	}
+	x = 1;
+	x = manos(x);
+	x = manolis(x,x);
+	
+}
+

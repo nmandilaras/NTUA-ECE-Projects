@@ -1,0 +1,13 @@
+/*
+
+"\""            { printf("String %s",yytext); BEGIN(S_STRING); }
+<S_STRING>"\"" { printf("%s\n",yytext); BEGIN(INITIAL); }
+<S_STRING>\n { printf("ERROR: Strings cannot be extended in more than one line or with simle words:%s\n",yytext); BEGIN(ERROR);  }
+<S_STRING>.    {printf("%s",yytext); }
+
+<ERROR>{
+}
+
+\"([^\\\"]|\\.)*\"	printf("String %s\n",yytext);      // L?\"(\\.|[^\\"])*\"  gia sxolia poy ektinontai se polles grammes
+
+*/

@@ -1,0 +1,5 @@
+clang-3.5 -S -emit-llvm  ca.c
+
+
+clang++ -c -emit-llvm input.cpp -o input.ll
+llc -march=cpp -o input.ll.cpp input.ll

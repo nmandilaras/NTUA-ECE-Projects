@@ -1,0 +1,1062 @@
+g++  -c `llvm-config-3.8 --cxxflags` -o general.o general.cpp
+In file included from /usr/include/c++/4.8/type_traits:35:0,
+                 from /usr/include/llvm/Support/AlignOf.h:20,
+                 from /usr/include/llvm/ADT/Optional.h:20,
+                 from /usr/include/llvm/IR/Module.h:18,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/c++/4.8/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+In file included from /usr/include/llvm/ADT/Optional.h:20:0,
+                 from /usr/include/llvm/IR/Module.h:18,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/Support/AlignOf.h:28:30: error: ‘is_abstract’ is not a member of ‘std’
+ template <typename T, bool = std::is_abstract<T>::value>
+                              ^
+/usr/include/llvm/Support/AlignOf.h:28:48: error: expected primary-expression before ‘>’ token
+ template <typename T, bool = std::is_abstract<T>::value>
+                                                ^
+/usr/include/llvm/Support/AlignOf.h:28:49: error: ‘value’ in namespace ‘::’ does not name a type
+ template <typename T, bool = std::is_abstract<T>::value>
+                                                 ^
+/usr/include/llvm/Support/AlignOf.h:57:8: error: ‘AlignmentCalcImpl’ is not a class template
+ struct AlignmentCalcImpl<T, true> : AlignmentCalcImplBase, T {
+        ^
+/usr/include/llvm/Support/AlignOf.h:78:10: error: ‘constexpr’ does not name a type
+   static constexpr unsigned Alignment = static_cast<unsigned int>(
+          ^
+/usr/include/llvm/Support/AlignOf.h:78:10: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+/usr/include/llvm/Support/AlignOf.h:86:42: error: ‘Alignment’ was not declared in this scope
+   enum { Alignment_GreaterEqual_2Bytes = Alignment >= 2 ? 1 : 0 };
+                                          ^
+/usr/include/llvm/Support/AlignOf.h:87:42: error: ‘Alignment’ was not declared in this scope
+   enum { Alignment_GreaterEqual_4Bytes = Alignment >= 4 ? 1 : 0 };
+                                          ^
+/usr/include/llvm/Support/AlignOf.h:88:42: error: ‘Alignment’ was not declared in this scope
+   enum { Alignment_GreaterEqual_8Bytes = Alignment >= 8 ? 1 : 0 };
+                                          ^
+/usr/include/llvm/Support/AlignOf.h:89:43: error: ‘Alignment’ was not declared in this scope
+   enum { Alignment_GreaterEqual_16Bytes = Alignment >= 16 ? 1 : 0 };
+                                           ^
+/usr/include/llvm/Support/AlignOf.h:91:39: error: ‘Alignment’ was not declared in this scope
+   enum { Alignment_LessEqual_2Bytes = Alignment <= 2 ? 1 : 0 };
+                                       ^
+/usr/include/llvm/Support/AlignOf.h:92:39: error: ‘Alignment’ was not declared in this scope
+   enum { Alignment_LessEqual_4Bytes = Alignment <= 4 ? 1 : 0 };
+                                       ^
+/usr/include/llvm/Support/AlignOf.h:93:39: error: ‘Alignment’ was not declared in this scope
+   enum { Alignment_LessEqual_8Bytes = Alignment <= 8 ? 1 : 0 };
+                                       ^
+/usr/include/llvm/Support/AlignOf.h:94:40: error: ‘Alignment’ was not declared in this scope
+   enum { Alignment_LessEqual_16Bytes = Alignment <= 16 ? 1 : 0 };
+                                        ^
+/usr/include/llvm/Support/AlignOf.h:98:23: error: ‘constexpr’ does not name a type
+ template <typename T> constexpr unsigned AlignOf<T>::Alignment;
+                       ^
+/usr/include/llvm/Support/AlignOf.h:98:23: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+In file included from /usr/include/llvm/IR/Module.h:18:0,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/ADT/Optional.h:45:14: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   Optional(T &&y) : hasVal(true) {
+              ^
+/usr/include/llvm/ADT/Optional.h:48:24: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   Optional(Optional<T> &&O) : hasVal(O) {
+                        ^
+/usr/include/llvm/ADT/Optional.h:48:27: error: invalid constructor; you probably meant ‘llvm::Optional<T> (const llvm::Optional<T>&)’
+   Optional(Optional<T> &&O) : hasVal(O) {
+                           ^
+/usr/include/llvm/ADT/Optional.h:54:25: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   Optional &operator=(T &&y) {
+                         ^
+/usr/include/llvm/ADT/Optional.h:63:32: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   Optional &operator=(Optional &&O) {
+                                ^
+/usr/include/llvm/ADT/Optional.h:75:25: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   void emplace(ArgTypes &&...Args) {
+                         ^
+/usr/include/llvm/ADT/Optional.h:75:34: error: parameter packs not expanded with ‘...’:
+   void emplace(ArgTypes &&...Args) {
+                                  ^
+/usr/include/llvm/ADT/Optional.h:75:34: note:         ‘ArgTypes’
+/usr/include/llvm/ADT/Optional.h:121:23: error: expected ‘;’ at end of member declaration
+   const T& getValue() const LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                       ^
+/usr/include/llvm/ADT/Optional.h:121:50: error: expected unqualified-id before ‘{’ token
+   const T& getValue() const LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                                                  ^
+/usr/include/llvm/ADT/Optional.h:121:90: error: expected ‘;’ at end of member declaration
+   const T& getValue() const LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                                                                                          ^
+/usr/include/llvm/ADT/Optional.h:122:15: error: expected ‘;’ at end of member declaration
+   T& getValue() LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+               ^
+/usr/include/llvm/ADT/Optional.h:122:38: error: expected unqualified-id before ‘{’ token
+   T& getValue() LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                                      ^
+/usr/include/llvm/ADT/Optional.h:122:78: error: expected ‘;’ at end of member declaration
+   T& getValue() LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                                                                              ^
+/usr/include/llvm/ADT/Optional.h:128:24: error: expected ‘;’ at end of member declaration
+   const T& operator*() const LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                        ^
+/usr/include/llvm/ADT/Optional.h:128:51: error: expected unqualified-id before ‘{’ token
+   const T& operator*() const LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                                                   ^
+/usr/include/llvm/ADT/Optional.h:128:91: error: expected ‘;’ at end of member declaration
+   const T& operator*() const LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                                                                                           ^
+/usr/include/llvm/ADT/Optional.h:129:16: error: expected ‘;’ at end of member declaration
+   T& operator*() LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                ^
+/usr/include/llvm/ADT/Optional.h:129:39: error: expected unqualified-id before ‘{’ token
+   T& operator*() LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                                       ^
+/usr/include/llvm/ADT/Optional.h:129:79: error: expected ‘;’ at end of member declaration
+   T& operator*() LLVM_LVALUE_FUNCTION { assert(hasVal); return *getPointer(); }
+                                                                               ^
+/usr/include/llvm/ADT/Optional.h:132:33: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   LLVM_CONSTEXPR T getValueOr(U &&value) const LLVM_LVALUE_FUNCTION {
+                                 ^
+In file included from /usr/include/llvm/Support/AlignOf.h:18:0,
+                 from /usr/include/llvm/ADT/Optional.h:20,
+                 from /usr/include/llvm/IR/Module.h:18,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/ADT/Optional.h:132:48: error: expected initializer before ‘&’ token
+   LLVM_CONSTEXPR T getValueOr(U &&value) const LLVM_LVALUE_FUNCTION {
+                                                ^
+In file included from /usr/include/llvm/IR/Module.h:18:0,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/ADT/Optional.h:137:4: error: expected unqualified-id before ‘&&’ token
+   T&& getValue() && { assert(hasVal); return std::move(*getPointer()); }
+    ^
+/usr/include/llvm/ADT/Optional.h:138:4: error: expected unqualified-id before ‘&&’ token
+   T&& operator*() && { assert(hasVal); return std::move(*getPointer()); }
+    ^
+/usr/include/llvm/ADT/Optional.h:141:18: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   T getValueOr(U &&value) && {
+                  ^
+/usr/include/llvm/ADT/Optional.h:141:27: error: expected initializer before ‘&&’ token
+   T getValueOr(U &&value) && {
+                           ^
+/usr/include/llvm/ADT/Optional.h: In constructor ‘llvm::Optional<T>::Optional(T)’:
+/usr/include/llvm/ADT/Optional.h:46:28: error: ‘forward’ is not a member of ‘std’
+     new (storage.buffer) T(std::forward<T>(y));
+                            ^
+/usr/include/llvm/ADT/Optional.h:46:42: error: expected primary-expression before ‘>’ token
+     new (storage.buffer) T(std::forward<T>(y));
+                                          ^
+/usr/include/llvm/ADT/Optional.h:46:44: error: ‘y’ was not declared in this scope
+     new (storage.buffer) T(std::forward<T>(y));
+                                            ^
+/usr/include/llvm/ADT/Optional.h: In member function ‘llvm::Optional<T>& llvm::Optional<T>::operator=(T)’:
+/usr/include/llvm/ADT/Optional.h:56:16: error: ‘move’ is not a member of ‘std’
+       **this = std::move(y);
+                ^
+/usr/include/llvm/ADT/Optional.h:56:26: error: ‘y’ was not declared in this scope
+       **this = std::move(y);
+                          ^
+/usr/include/llvm/ADT/Optional.h:58:30: error: ‘move’ is not a member of ‘std’
+       new (storage.buffer) T(std::move(y));
+                              ^
+/usr/include/llvm/ADT/Optional.h:58:40: error: ‘y’ was not declared in this scope
+       new (storage.buffer) T(std::move(y));
+                                        ^
+/usr/include/llvm/ADT/Optional.h: In member function ‘llvm::Optional<T>& llvm::Optional<T>::operator=(llvm::Optional<T>)’:
+/usr/include/llvm/ADT/Optional.h:64:10: error: ‘O’ was not declared in this scope
+     if (!O)
+          ^
+/usr/include/llvm/ADT/Optional.h:67:15: error: ‘move’ is not a member of ‘std’
+       *this = std::move(*O);
+               ^
+/usr/include/llvm/ADT/Optional.h: In member function ‘void llvm::Optional<T>::emplace(<type error>)’:
+/usr/include/llvm/ADT/Optional.h:78:28: error: ‘forward’ is not a member of ‘std’
+     new (storage.buffer) T(std::forward<ArgTypes>(Args)...);
+                            ^
+/usr/include/llvm/ADT/Optional.h:78:49: error: expected primary-expression before ‘>’ token
+     new (storage.buffer) T(std::forward<ArgTypes>(Args)...);
+                                                 ^
+/usr/include/llvm/ADT/Optional.h:78:51: error: ‘Args’ was not declared in this scope
+     new (storage.buffer) T(std::forward<ArgTypes>(Args)...);
+                                                   ^
+In file included from /usr/include/llvm/IR/Module.h:19:0,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/ADT/iterator_range.h: At global scope:
+/usr/include/llvm/ADT/iterator_range.h:39:28: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   iterator_range(Container &&c)
+                            ^
+/usr/include/llvm/ADT/iterator_range.h: In constructor ‘llvm::iterator_range<IteratorT>::iterator_range(Container)’:
+/usr/include/llvm/ADT/iterator_range.h:41:24: error: ‘c’ was not declared in this scope
+       : begin_iterator(c.begin()), end_iterator(c.end()) {}
+                        ^
+/usr/include/llvm/ADT/iterator_range.h: In constructor ‘llvm::iterator_range<IteratorT>::iterator_range(IteratorT, IteratorT)’:
+/usr/include/llvm/ADT/iterator_range.h:43:24: error: ‘move’ is not a member of ‘std’
+       : begin_iterator(std::move(begin_iterator)),
+                        ^
+/usr/include/llvm/ADT/iterator_range.h:44:22: error: ‘move’ is not a member of ‘std’
+         end_iterator(std::move(end_iterator)) {}
+                      ^
+/usr/include/llvm/ADT/iterator_range.h: In function ‘llvm::iterator_range<T> llvm::make_range(T, T)’:
+/usr/include/llvm/ADT/iterator_range.h:55:28: error: ‘move’ is not a member of ‘std’
+   return iterator_range<T>(std::move(x), std::move(y));
+                            ^
+/usr/include/llvm/ADT/iterator_range.h:55:42: error: ‘move’ is not a member of ‘std’
+   return iterator_range<T>(std::move(x), std::move(y));
+                                          ^
+/usr/include/llvm/ADT/iterator_range.h: In function ‘llvm::iterator_range<T> llvm::make_range(std::pair<T, T>)’:
+/usr/include/llvm/ADT/iterator_range.h:59:28: error: ‘move’ is not a member of ‘std’
+   return iterator_range<T>(std::move(p.first), std::move(p.second));
+                            ^
+/usr/include/llvm/ADT/iterator_range.h:59:48: error: ‘move’ is not a member of ‘std’
+   return iterator_range<T>(std::move(p.first), std::move(p.second));
+                                                ^
+/usr/include/llvm/ADT/iterator_range.h: At global scope:
+/usr/include/llvm/ADT/iterator_range.h:63:31: error: ‘declval’ is not a member of ‘std’
+ iterator_range<decltype(begin(std::declval<T>()))> drop_begin(T &&t, int n) {
+                               ^
+/usr/include/llvm/ADT/iterator_range.h:63:48: error: a function call cannot appear in a constant-expression
+ iterator_range<decltype(begin(std::declval<T>()))> drop_begin(T &&t, int n) {
+                                                ^
+/usr/include/llvm/ADT/iterator_range.h:63:49: error: a function call cannot appear in a constant-expression
+ iterator_range<decltype(begin(std::declval<T>()))> drop_begin(T &&t, int n) {
+                                                 ^
+/usr/include/llvm/ADT/iterator_range.h:63:50: error: template argument 1 is invalid
+ iterator_range<decltype(begin(std::declval<T>()))> drop_begin(T &&t, int n) {
+                                                  ^
+/usr/include/llvm/ADT/iterator_range.h:63:65: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ iterator_range<decltype(begin(std::declval<T>()))> drop_begin(T &&t, int n) {
+                                                                 ^
+/usr/include/llvm/ADT/iterator_range.h: In function ‘int llvm::drop_begin(T)’:
+/usr/include/llvm/ADT/iterator_range.h:64:21: error: ‘next’ is not a member of ‘std’
+   return make_range(std::next(begin(t), n), end(t));
+                     ^
+/usr/include/llvm/ADT/iterator_range.h:64:37: error: ‘t’ was not declared in this scope
+   return make_range(std::next(begin(t), n), end(t));
+                                     ^
+/usr/include/llvm/ADT/iterator_range.h:64:38: error: there are no arguments to ‘begin’ that depend on a template parameter, so a declaration of ‘begin’ must be available [-fpermissive]
+   return make_range(std::next(begin(t), n), end(t));
+                                      ^
+/usr/include/llvm/ADT/iterator_range.h:64:38: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+/usr/include/llvm/ADT/iterator_range.h:64:41: error: ‘n’ was not declared in this scope
+   return make_range(std::next(begin(t), n), end(t));
+                                         ^
+/usr/include/llvm/ADT/iterator_range.h:64:50: error: there are no arguments to ‘end’ that depend on a template parameter, so a declaration of ‘end’ must be available [-fpermissive]
+   return make_range(std::next(begin(t), n), end(t));
+                                                  ^
+In file included from /usr/include/llvm/IR/Comdat.h:19:0,
+                 from /usr/include/llvm/IR/Module.h:20,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/ADT/StringRef.h: At global scope:
+/usr/include/llvm/ADT/StringRef.h:358:19: error: ‘enable_if’ in namespace ‘std’ does not name a type
+     typename std::enable_if<std::numeric_limits<T>::is_signed, bool>::type
+                   ^
+/usr/include/llvm/ADT/StringRef.h:358:28: error: expected unqualified-id before ‘<’ token
+     typename std::enable_if<std::numeric_limits<T>::is_signed, bool>::type
+                            ^
+/usr/include/llvm/ADT/StringRef.h:369:19: error: ‘enable_if’ in namespace ‘std’ does not name a type
+     typename std::enable_if<!std::numeric_limits<T>::is_signed, bool>::type
+                   ^
+/usr/include/llvm/ADT/StringRef.h:369:28: error: expected unqualified-id before ‘<’ token
+     typename std::enable_if<!std::numeric_limits<T>::is_signed, bool>::type
+                            ^
+/usr/include/llvm/ADT/StringRef.h: In constructor ‘llvm::StringRef::StringRef()’:
+/usr/include/llvm/ADT/StringRef.h:68:37: error: ‘nullptr’ was not declared in this scope
+     /*implicit*/ StringRef() : Data(nullptr), Length(0) {}
+                                     ^
+In file included from /usr/include/llvm/IR/Module.h:20:0,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/IR/Comdat.h: At global scope:
+/usr/include/llvm/IR/Comdat.h:41:17: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   Comdat(Comdat &&C);
+                 ^
+/usr/include/llvm/IR/Comdat.h:41:20: error: invalid constructor; you probably meant ‘llvm::Comdat (const llvm::Comdat&)’
+   Comdat(Comdat &&C);
+                    ^
+In file included from /usr/include/llvm/ADT/SmallVector.h:20:0,
+                 from /usr/include/llvm/Support/Allocator.h:24,
+                 from /usr/include/llvm/ADT/StringMap.h:18,
+                 from /usr/include/llvm/Support/Host.h:17,
+                 from /usr/include/llvm/ADT/Hashing.h:49,
+                 from /usr/include/llvm/ADT/ArrayRef.h:13,
+                 from /usr/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /usr/include/llvm/ADT/DenseMap.h:17,
+                 from /usr/include/llvm/IR/DataLayout.h:23,
+                 from /usr/include/llvm/IR/Module.h:21,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/Support/MathExtras.h: In static member function ‘static unsigned int llvm::detail::PopulationCounter<T, SizeOfT>::count(T)’:
+/usr/include/llvm/Support/MathExtras.h:418:51: error: there are no arguments to ‘static_assert’ that depend on a template parameter, so a declaration of ‘static_assert’ must be available [-fpermissive]
+     static_assert(SizeOfT <= 4, "Not implemented!");
+                                                   ^
+/usr/include/llvm/Support/MathExtras.h: At global scope:
+/usr/include/llvm/Support/MathExtras.h:661:15: error: ‘enable_if’ in namespace ‘std’ does not name a type
+ typename std::enable_if<std::is_unsigned<T>::value, T>::type
+               ^
+/usr/include/llvm/Support/MathExtras.h:661:24: error: expected unqualified-id before ‘<’ token
+ typename std::enable_if<std::is_unsigned<T>::value, T>::type
+                        ^
+/usr/include/llvm/Support/MathExtras.h:679:15: error: ‘enable_if’ in namespace ‘std’ does not name a type
+ typename std::enable_if<std::is_unsigned<T>::value, T>::type
+               ^
+/usr/include/llvm/Support/MathExtras.h:679:24: error: expected unqualified-id before ‘<’ token
+ typename std::enable_if<std::is_unsigned<T>::value, T>::type
+                        ^
+/usr/include/llvm/Support/MathExtras.h:727:15: error: ‘enable_if’ in namespace ‘std’ does not name a type
+ typename std::enable_if<std::is_unsigned<T>::value, T>::type
+               ^
+/usr/include/llvm/Support/MathExtras.h:727:24: error: expected unqualified-id before ‘<’ token
+ typename std::enable_if<std::is_unsigned<T>::value, T>::type
+                        ^
+In file included from /usr/include/llvm/ADT/SmallVector.h:21:0,
+                 from /usr/include/llvm/Support/Allocator.h:24,
+                 from /usr/include/llvm/ADT/StringMap.h:18,
+                 from /usr/include/llvm/Support/Host.h:17,
+                 from /usr/include/llvm/ADT/Hashing.h:49,
+                 from /usr/include/llvm/ADT/ArrayRef.h:13,
+                 from /usr/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /usr/include/llvm/ADT/DenseMap.h:17,
+                 from /usr/include/llvm/IR/DataLayout.h:23,
+                 from /usr/include/llvm/IR/Module.h:21,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/Support/type_traits.h:46:30: error: ‘is_class’ is not a member of ‘std’
+   static const bool value = !std::is_class<T>::value;
+                              ^
+/usr/include/llvm/Support/type_traits.h:46:45: error: expected primary-expression before ‘>’ token
+   static const bool value = !std::is_class<T>::value;
+                                             ^
+/usr/include/llvm/Support/type_traits.h:46:46: error: ‘::value’ has not been declared
+   static const bool value = !std::is_class<T>::value;
+                                              ^
+/usr/include/llvm/Support/type_traits.h:63:25: error: ‘remove_reference’ in namespace ‘std’ does not name a type
+   typedef typename std::remove_reference<T>::type UnderlyingT;
+                         ^
+/usr/include/llvm/Support/type_traits.h:63:41: error: expected unqualified-id before ‘<’ token
+   typedef typename std::remove_reference<T>::type UnderlyingT;
+                                         ^
+/usr/include/llvm/Support/type_traits.h:67:8: error: ‘is_class’ is not a member of ‘std’
+       !std::is_class<UnderlyingT>::value && // Filter conversion operators.
+        ^
+/usr/include/llvm/Support/type_traits.h:67:22: error: ‘UnderlyingT’ was not declared in this scope
+       !std::is_class<UnderlyingT>::value && // Filter conversion operators.
+                      ^
+/usr/include/llvm/Support/type_traits.h:67:34: error: ‘::value’ has not been declared
+       !std::is_class<UnderlyingT>::value && // Filter conversion operators.
+                                  ^
+/usr/include/llvm/Support/type_traits.h:68:8: error: ‘is_pointer’ is not a member of ‘std’
+       !std::is_pointer<UnderlyingT>::value &&
+        ^
+/usr/include/llvm/Support/type_traits.h:68:24: error: ‘UnderlyingT’ was not declared in this scope
+       !std::is_pointer<UnderlyingT>::value &&
+                        ^
+/usr/include/llvm/Support/type_traits.h:68:36: error: ‘::value’ has not been declared
+       !std::is_pointer<UnderlyingT>::value &&
+                                    ^
+/usr/include/llvm/Support/type_traits.h:69:8: error: ‘is_floating_point’ is not a member of ‘std’
+       !std::is_floating_point<UnderlyingT>::value &&
+        ^
+/usr/include/llvm/Support/type_traits.h:69:31: error: ‘UnderlyingT’ was not declared in this scope
+       !std::is_floating_point<UnderlyingT>::value &&
+                               ^
+/usr/include/llvm/Support/type_traits.h:69:43: error: ‘::value’ has not been declared
+       !std::is_floating_point<UnderlyingT>::value &&
+                                           ^
+/usr/include/llvm/Support/type_traits.h:70:7: error: ‘is_convertible’ is not a member of ‘std’
+       std::is_convertible<UnderlyingT, unsigned long long>::value;
+       ^
+/usr/include/llvm/Support/type_traits.h:70:27: error: ‘UnderlyingT’ was not declared in this scope
+       std::is_convertible<UnderlyingT, unsigned long long>::value;
+                           ^
+/usr/include/llvm/Support/type_traits.h:70:40: error: expected unqualified-id before ‘unsigned’
+       std::is_convertible<UnderlyingT, unsigned long long>::value;
+                                        ^
+/usr/include/llvm/Support/type_traits.h:79:22: error: ‘enable_if’ in namespace ‘std’ does not name a type
+     T, typename std::enable_if<std::is_pointer<T>::value>::type> {
+                      ^
+/usr/include/llvm/Support/type_traits.h:79:31: error: expected template-argument before ‘<’ token
+     T, typename std::enable_if<std::is_pointer<T>::value>::type> {
+                               ^
+/usr/include/llvm/Support/type_traits.h:79:31: error: expected ‘>’ before ‘<’ token
+/usr/include/llvm/Support/type_traits.h:79:64: error: template argument 2 is invalid
+     T, typename std::enable_if<std::is_pointer<T>::value>::type> {
+                                                                ^
+/usr/include/llvm/Support/type_traits.h:79:66: error: expected ‘::’ before ‘{’ token
+     T, typename std::enable_if<std::is_pointer<T>::value>::type> {
+                                                                  ^
+/usr/include/llvm/Support/type_traits.h:79:66: error: expected identifier before ‘{’ token
+/usr/include/llvm/Support/type_traits.h:79:66: error: qualified name does not name a class before ‘{’ token
+/usr/include/llvm/Support/type_traits.h:90:22: error: ‘enable_if’ in namespace ‘std’ does not name a type
+     T, typename std::enable_if<std::is_pointer<T>::value>::type> {
+                      ^
+/usr/include/llvm/Support/type_traits.h:90:31: error: expected template-argument before ‘<’ token
+     T, typename std::enable_if<std::is_pointer<T>::value>::type> {
+                               ^
+/usr/include/llvm/Support/type_traits.h:90:31: error: expected ‘>’ before ‘<’ token
+/usr/include/llvm/Support/type_traits.h:90:64: error: template argument 2 is invalid
+     T, typename std::enable_if<std::is_pointer<T>::value>::type> {
+                                                                ^
+/usr/include/llvm/Support/type_traits.h:90:66: error: expected ‘::’ before ‘{’ token
+     T, typename std::enable_if<std::is_pointer<T>::value>::type> {
+                                                                  ^
+/usr/include/llvm/Support/type_traits.h:90:66: error: expected identifier before ‘{’ token
+/usr/include/llvm/Support/type_traits.h:90:66: error: qualified name does not name a class before ‘{’ token
+In file included from /usr/include/llvm/Support/Allocator.h:24:0,
+                 from /usr/include/llvm/ADT/StringMap.h:18,
+                 from /usr/include/llvm/Support/Host.h:17,
+                 from /usr/include/llvm/ADT/Hashing.h:49,
+                 from /usr/include/llvm/ADT/ArrayRef.h:13,
+                 from /usr/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /usr/include/llvm/ADT/DenseMap.h:17,
+                 from /usr/include/llvm/IR/DataLayout.h:23,
+                 from /usr/include/llvm/IR/Module.h:21,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/ADT/SmallVector.h:236:20: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   void push_back(T &&Elt) {
+                    ^
+/usr/include/llvm/ADT/SmallVector.h: In static member function ‘static It2 llvm::SmallVectorTemplateBase<T, isPodLike>::move(It1, It1, It2)’:
+/usr/include/llvm/ADT/SmallVector.h:193:15: error: ‘move’ is not a member of ‘std’
+       *Dest = ::std::move(*I);
+               ^
+/usr/include/llvm/ADT/SmallVector.h: In static member function ‘static It2 llvm::SmallVectorTemplateBase<T, isPodLike>::move_backward(It1, It1, It2)’:
+/usr/include/llvm/ADT/SmallVector.h:204:17: error: ‘move’ is not a member of ‘std’
+       *--Dest = ::std::move(*--E);
+                 ^
+/usr/include/llvm/ADT/SmallVector.h: In static member function ‘static void llvm::SmallVectorTemplateBase<T, isPodLike>::uninitialized_move(It1, It1, It2)’:
+/usr/include/llvm/ADT/SmallVector.h:213:32: error: ‘move’ is not a member of ‘std’
+       ::new ((void*) &*Dest) T(::std::move(*I));
+                                ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘void llvm::SmallVectorTemplateBase<T, isPodLike>::push_back(T)’:
+/usr/include/llvm/ADT/SmallVector.h:239:35: error: ‘move’ is not a member of ‘std’
+     ::new ((void*) this->end()) T(::std::move(Elt));
+                                   ^
+/usr/include/llvm/ADT/SmallVector.h:239:47: error: ‘Elt’ was not declared in this scope
+     ::new ((void*) this->end()) T(::std::move(Elt));
+                                               ^
+/usr/include/llvm/ADT/SmallVector.h: At global scope:
+/usr/include/llvm/ADT/SmallVector.h:321:21: error: ‘enable_if’ in namespace ‘std’ does not name a type
+       typename std::enable_if<std::is_same<typename std::remove_const<T1>::type,
+                     ^
+/usr/include/llvm/ADT/SmallVector.h:321:30: error: expected ‘,’ or ‘...’ before ‘<’ token
+       typename std::enable_if<std::is_same<typename std::remove_const<T1>::type,
+                              ^
+/usr/include/llvm/ADT/SmallVector.h:445:20: error: ‘std::initializer_list’ has not been declared
+   void append(std::initializer_list<T> IL) {
+                    ^
+/usr/include/llvm/ADT/SmallVector.h:445:36: error: expected ‘,’ or ‘...’ before ‘<’ token
+   void append(std::initializer_list<T> IL) {
+                                    ^
+/usr/include/llvm/ADT/SmallVector.h:457:20: error: ‘std::initializer_list’ has not been declared
+   void assign(std::initializer_list<T> IL) {
+                    ^
+/usr/include/llvm/ADT/SmallVector.h:457:36: error: expected ‘,’ or ‘...’ before ‘<’ token
+   void assign(std::initializer_list<T> IL) {
+                                    ^
+/usr/include/llvm/ADT/SmallVector.h:488:33: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   iterator insert(iterator I, T &&Elt) {
+                                 ^
+/usr/include/llvm/ADT/SmallVector.h:655:32: error: ‘std::initializer_list’ has not been declared
+   void insert(iterator I, std::initializer_list<T> IL) {
+                                ^
+/usr/include/llvm/ADT/SmallVector.h:655:48: error: expected ‘,’ or ‘...’ before ‘<’ token
+   void insert(iterator I, std::initializer_list<T> IL) {
+                                                ^
+/usr/include/llvm/ADT/SmallVector.h:659:62: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   template <typename... ArgTypes> void emplace_back(ArgTypes &&... Args) {
+                                                              ^
+/usr/include/llvm/ADT/SmallVector.h:659:72: error: parameter packs not expanded with ‘...’:
+   template <typename... ArgTypes> void emplace_back(ArgTypes &&... Args) {
+                                                                        ^
+/usr/include/llvm/ADT/SmallVector.h:659:72: note:         ‘ArgTypes’
+/usr/include/llvm/ADT/SmallVector.h:668:46: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   SmallVectorImpl &operator=(SmallVectorImpl &&RHS);
+                                              ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘void llvm::SmallVectorImpl<T>::resize(llvm::SmallVectorImpl<T>::size_type)’:
+/usr/include/llvm/ADT/SmallVector.h:390:17: error: ‘I’ does not name a type
+       for (auto I = this->end(), E = this->begin() + N; I != E; ++I)
+                 ^
+/usr/include/llvm/ADT/SmallVector.h:390:57: error: expected ‘;’ before ‘I’
+       for (auto I = this->end(), E = this->begin() + N; I != E; ++I)
+                                                         ^
+/usr/include/llvm/ADT/SmallVector.h:390:57: error: ‘I’ was not declared in this scope
+/usr/include/llvm/ADT/SmallVector.h:390:62: error: ‘E’ was not declared in this scope
+       for (auto I = this->end(), E = this->begin() + N; I != E; ++I)
+                                                              ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘T llvm::SmallVectorImpl<T>::pop_back_val()’:
+/usr/include/llvm/ADT/SmallVector.h:414:16: error: ‘move’ is not a member of ‘std’
+     T Result = ::std::move(this->back());
+                ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘void llvm::SmallVectorImpl<T>::append(int)’:
+/usr/include/llvm/ADT/SmallVector.h:446:12: error: ‘IL’ was not declared in this scope
+     append(IL.begin(), IL.end());
+            ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘void llvm::SmallVectorImpl<T>::assign(int)’:
+/usr/include/llvm/ADT/SmallVector.h:459:12: error: ‘IL’ was not declared in this scope
+     append(IL);
+            ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘llvm::SmallVectorImpl<T>::iterator llvm::SmallVectorImpl<T>::insert(llvm::SmallVectorImpl<T>::iterator, T)’:
+/usr/include/llvm/ADT/SmallVector.h:490:23: error: ‘move’ is not a member of ‘std’
+       this->push_back(::std::move(Elt));
+                       ^
+/usr/include/llvm/ADT/SmallVector.h:490:35: error: ‘Elt’ was not declared in this scope
+       this->push_back(::std::move(Elt));
+                                   ^
+/usr/include/llvm/ADT/SmallVector.h:503:35: error: ‘move’ is not a member of ‘std’
+     ::new ((void*) this->end()) T(::std::move(this->back()));
+                                   ^
+/usr/include/llvm/ADT/SmallVector.h:510:18: error: ‘Elt’ was not declared in this scope
+     T *EltPtr = &Elt;
+                  ^
+/usr/include/llvm/ADT/SmallVector.h:514:10: error: ‘move’ is not a member of ‘std’
+     *I = ::std::move(*EltPtr);
+          ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘llvm::SmallVectorImpl<T>::iterator llvm::SmallVectorImpl<T>::insert(llvm::SmallVectorImpl<T>::iterator, const T&)’:
+/usr/include/llvm/ADT/SmallVector.h:532:35: error: ‘move’ is not a member of ‘std’
+     ::new ((void*) this->end()) T(std::move(this->back()));
+                                   ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘llvm::SmallVectorImpl<T>::iterator llvm::SmallVectorImpl<T>::insert(llvm::SmallVectorImpl<T>::iterator, llvm::SmallVectorImpl<T>::size_type, const T&)’:
+/usr/include/llvm/ADT/SmallVector.h:571:14: error: ‘move_iterator’ is not a member of ‘std’
+       append(std::move_iterator<iterator>(this->end() - NumToInsert),
+              ^
+/usr/include/llvm/ADT/SmallVector.h:571:41: error: expected primary-expression before ‘>’ token
+       append(std::move_iterator<iterator>(this->end() - NumToInsert),
+                                         ^
+/usr/include/llvm/ADT/SmallVector.h:572:14: error: ‘move_iterator’ is not a member of ‘std’
+              std::move_iterator<iterator>(this->end()));
+              ^
+/usr/include/llvm/ADT/SmallVector.h:572:41: error: expected primary-expression before ‘>’ token
+              std::move_iterator<iterator>(this->end()));
+                                         ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘llvm::SmallVectorImpl<T>::iterator llvm::SmallVectorImpl<T>::insert(llvm::SmallVectorImpl<T>::iterator, ItTy, ItTy)’:
+/usr/include/llvm/ADT/SmallVector.h:625:14: error: ‘move_iterator’ is not a member of ‘std’
+       append(std::move_iterator<iterator>(this->end() - NumToInsert),
+              ^
+/usr/include/llvm/ADT/SmallVector.h:625:41: error: expected primary-expression before ‘>’ token
+       append(std::move_iterator<iterator>(this->end() - NumToInsert),
+                                         ^
+/usr/include/llvm/ADT/SmallVector.h:626:14: error: ‘move_iterator’ is not a member of ‘std’
+              std::move_iterator<iterator>(this->end()));
+              ^
+/usr/include/llvm/ADT/SmallVector.h:626:41: error: expected primary-expression before ‘>’ token
+              std::move_iterator<iterator>(this->end()));
+                                         ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘void llvm::SmallVectorImpl<T>::insert(llvm::SmallVectorImpl<T>::iterator, int)’:
+/usr/include/llvm/ADT/SmallVector.h:656:15: error: ‘IL’ was not declared in this scope
+     insert(I, IL.begin(), IL.end());
+               ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘void llvm::SmallVectorImpl<T>::emplace_back(<type error>)’:
+/usr/include/llvm/ADT/SmallVector.h:662:35: error: ‘forward’ is not a member of ‘std’
+     ::new ((void *)this->end()) T(std::forward<ArgTypes>(Args)...);
+                                   ^
+/usr/include/llvm/ADT/SmallVector.h:662:56: error: expected primary-expression before ‘>’ token
+     ::new ((void *)this->end()) T(std::forward<ArgTypes>(Args)...);
+                                                        ^
+/usr/include/llvm/ADT/SmallVector.h:662:58: error: ‘Args’ was not declared in this scope
+     ::new ((void *)this->end()) T(std::forward<ArgTypes>(Args)...);
+                                                          ^
+/usr/include/llvm/ADT/SmallVector.h: At global scope:
+/usr/include/llvm/ADT/SmallVector.h:787:70: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ SmallVectorImpl<T> &SmallVectorImpl<T>::operator=(SmallVectorImpl<T> &&RHS) {
+                                                                      ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘llvm::SmallVectorImpl<T>& llvm::SmallVectorImpl<T>::operator=(llvm::SmallVectorImpl<T>)’:
+/usr/include/llvm/ADT/SmallVector.h:789:16: error: ‘RHS’ was not declared in this scope
+   if (this == &RHS) return *this;
+                ^
+/usr/include/llvm/ADT/SmallVector.h:792:8: error: ‘RHS’ was not declared in this scope
+   if (!RHS.isSmall()) {
+        ^
+/usr/include/llvm/ADT/SmallVector.h:804:20: error: ‘RHS’ was not declared in this scope
+   size_t RHSSize = RHS.size();
+                    ^
+/usr/include/llvm/ADT/SmallVector.h: At global scope:
+/usr/include/llvm/ADT/SmallVector.h:891:36: error: expected ‘)’ before ‘<’ token
+   SmallVector(std::initializer_list<T> IL) : SmallVectorImpl<T>(N) {
+                                    ^
+/usr/include/llvm/ADT/SmallVector.h:905:27: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   SmallVector(SmallVector &&RHS) : SmallVectorImpl<T>(N) {
+                           ^
+/usr/include/llvm/ADT/SmallVector.h:905:32: error: invalid constructor; you probably meant ‘llvm::SmallVector<T, N> (const llvm::SmallVector<T, N>&)’
+   SmallVector(SmallVector &&RHS) : SmallVectorImpl<T>(N) {
+                                ^
+/usr/include/llvm/ADT/SmallVector.h:910:44: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   const SmallVector &operator=(SmallVector &&RHS) {
+                                            ^
+/usr/include/llvm/ADT/SmallVector.h:915:34: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   SmallVector(SmallVectorImpl<T> &&RHS) : SmallVectorImpl<T>(N) {
+                                  ^
+/usr/include/llvm/ADT/SmallVector.h:920:51: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   const SmallVector &operator=(SmallVectorImpl<T> &&RHS) {
+                                                   ^
+/usr/include/llvm/ADT/SmallVector.h:925:37: error: declaration of ‘operator=’ as non-function
+   const SmallVector &operator=(std::initializer_list<T> IL) {
+                                     ^
+/usr/include/llvm/ADT/SmallVector.h:925:30: error: expected ‘;’ at end of member declaration
+   const SmallVector &operator=(std::initializer_list<T> IL) {
+                              ^
+/usr/include/llvm/ADT/SmallVector.h:925:53: error: expected ‘)’ before ‘<’ token
+   const SmallVector &operator=(std::initializer_list<T> IL) {
+                                                     ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘const llvm::SmallVector<T, N>& llvm::SmallVector<T, N>::operator=(llvm::SmallVector<T, N>)’:
+/usr/include/llvm/ADT/SmallVector.h:911:35: error: ‘move’ is not a member of ‘std’
+     SmallVectorImpl<T>::operator=(::std::move(RHS));
+                                   ^
+/usr/include/llvm/ADT/SmallVector.h:911:47: error: ‘RHS’ was not declared in this scope
+     SmallVectorImpl<T>::operator=(::std::move(RHS));
+                                               ^
+/usr/include/llvm/ADT/SmallVector.h: In constructor ‘llvm::SmallVector<T, N>::SmallVector(llvm::SmallVectorImpl<T>)’:
+/usr/include/llvm/ADT/SmallVector.h:916:10: error: ‘RHS’ was not declared in this scope
+     if (!RHS.empty())
+          ^
+/usr/include/llvm/ADT/SmallVector.h:917:37: error: ‘move’ is not a member of ‘std’
+       SmallVectorImpl<T>::operator=(::std::move(RHS));
+                                     ^
+/usr/include/llvm/ADT/SmallVector.h: In member function ‘const llvm::SmallVector<T, N>& llvm::SmallVector<T, N>::operator=(llvm::SmallVectorImpl<T>)’:
+/usr/include/llvm/ADT/SmallVector.h:921:35: error: ‘move’ is not a member of ‘std’
+     SmallVectorImpl<T>::operator=(::std::move(RHS));
+                                   ^
+/usr/include/llvm/ADT/SmallVector.h:921:47: error: ‘RHS’ was not declared in this scope
+     SmallVectorImpl<T>::operator=(::std::move(RHS));
+                                               ^
+In file included from /usr/include/llvm/Support/Allocator.h:28:0,
+                 from /usr/include/llvm/ADT/StringMap.h:18,
+                 from /usr/include/llvm/Support/Host.h:17,
+                 from /usr/include/llvm/ADT/Hashing.h:49,
+                 from /usr/include/llvm/ADT/ArrayRef.h:13,
+                 from /usr/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /usr/include/llvm/ADT/DenseMap.h:17,
+                 from /usr/include/llvm/IR/DataLayout.h:23,
+                 from /usr/include/llvm/IR/Module.h:21,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/Support/Memory.h: In constructor ‘llvm::sys::MemoryBlock::MemoryBlock()’:
+/usr/include/llvm/Support/Memory.h:31:29: error: ‘nullptr’ was not declared in this scope
+     MemoryBlock() : Address(nullptr), Size(0) { }
+                             ^
+/usr/include/llvm/Support/Memory.h: At global scope:
+/usr/include/llvm/Support/Memory.h:81:50: error: ‘std::error_code’ has not been declared
+                                             std::error_code &EC);
+                                                  ^
+/usr/include/llvm/Support/Memory.h:92:12: error: ‘error_code’ in namespace ‘std’ does not name a type
+     static std::error_code releaseMappedMemory(MemoryBlock &Block);
+            ^
+/usr/include/llvm/Support/Memory.h:109:12: error: ‘error_code’ in namespace ‘std’ does not name a type
+     static std::error_code protectMappedMemory(const MemoryBlock &Block,
+            ^
+/usr/include/llvm/Support/Memory.h:124:58: error: ‘nullptr’ was not declared in this scope
+                                    std::string *ErrMsg = nullptr);
+                                                          ^
+/usr/include/llvm/Support/Memory.h:133:70: error: ‘nullptr’ was not declared in this scope
+     static bool ReleaseRWX(MemoryBlock &block, std::string *ErrMsg = nullptr);
+                                                                      ^
+/usr/include/llvm/Support/Memory.h:143:69: error: ‘nullptr’ was not declared in this scope
+     static bool setExecutable(MemoryBlock &M, std::string *ErrMsg = nullptr);
+                                                                     ^
+/usr/include/llvm/Support/Memory.h:148:67: error: ‘nullptr’ was not declared in this scope
+     static bool setWritable(MemoryBlock &M, std::string *ErrMsg = nullptr);
+                                                                   ^
+/usr/include/llvm/Support/Memory.h:164:41: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     OwningMemoryBlock(OwningMemoryBlock &&Other) {
+                                         ^
+/usr/include/llvm/Support/Memory.h:164:48: error: invalid constructor; you probably meant ‘llvm::sys::OwningMemoryBlock (const llvm::sys::OwningMemoryBlock&)’
+     OwningMemoryBlock(OwningMemoryBlock &&Other) {
+                                                ^
+/usr/include/llvm/Support/Memory.h:168:52: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     OwningMemoryBlock& operator=(OwningMemoryBlock &&Other) {
+                                                    ^
+/usr/include/llvm/Support/Memory.h: In member function ‘llvm::sys::OwningMemoryBlock& llvm::sys::OwningMemoryBlock::operator=(llvm::sys::OwningMemoryBlock)’:
+/usr/include/llvm/Support/Memory.h:169:11: error: ‘Other’ was not declared in this scope
+       M = Other.M;
+           ^
+/usr/include/llvm/Support/Memory.h: In destructor ‘llvm::sys::OwningMemoryBlock::~OwningMemoryBlock()’:
+/usr/include/llvm/Support/Memory.h:174:7: error: ‘releaseMappedMemory’ is not a member of ‘llvm::sys::Memory’
+       Memory::releaseMappedMemory(M);
+       ^
+In file included from /usr/include/llvm/ADT/StringMap.h:18:0,
+                 from /usr/include/llvm/Support/Host.h:17,
+                 from /usr/include/llvm/ADT/Hashing.h:49,
+                 from /usr/include/llvm/ADT/ArrayRef.h:13,
+                 from /usr/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /usr/include/llvm/ADT/DenseMap.h:17,
+                 from /usr/include/llvm/IR/DataLayout.h:23,
+                 from /usr/include/llvm/IR/Module.h:21,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/Support/Allocator.h: At global scope:
+/usr/include/llvm/Support/Allocator.h:82:17: error: ‘enable_if’ in namespace ‘std’ does not name a type
+   typename std::enable_if<
+                 ^
+/usr/include/llvm/Support/Allocator.h:82:26: error: expected unqualified-id before ‘<’ token
+   typename std::enable_if<
+                          ^
+/usr/include/llvm/Support/Allocator.h:137:67: error: template argument 3 is invalid
+           BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>> {
+                                                                   ^
+/usr/include/llvm/Support/Allocator.h:137:11: error: template argument 1 is invalid
+           BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>> {
+           ^
+/usr/include/llvm/Support/Allocator.h:139:17: error: ‘SizeThreshold’ is not a type
+   static_assert(SizeThreshold <= SlabSize,
+                 ^
+/usr/include/llvm/Support/Allocator.h:139:31: error: expected ‘,’ or ‘...’ before ‘<=’ token
+   static_assert(SizeThreshold <= SlabSize,
+                               ^
+/usr/include/llvm/Support/Allocator.h:147:26: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   BumpPtrAllocatorImpl(T &&Allocator)
+                          ^
+/usr/include/llvm/Support/Allocator.h:153:45: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   BumpPtrAllocatorImpl(BumpPtrAllocatorImpl &&Old)
+                                             ^
+/usr/include/llvm/Support/Allocator.h:153:50: error: invalid constructor; you probably meant ‘llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold> (const llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>&)’
+   BumpPtrAllocatorImpl(BumpPtrAllocatorImpl &&Old)
+                                                  ^
+/usr/include/llvm/Support/Allocator.h:169:56: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   BumpPtrAllocatorImpl &operator=(BumpPtrAllocatorImpl &&RHS) {
+                                                        ^
+In file included from /usr/include/llvm/ADT/Optional.h:20:0,
+                 from /usr/include/llvm/IR/Module.h:18,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/Support/AlignOf.h: In instantiation of ‘struct llvm::AlignedCharArrayUnion<void*, char, char, char, char, char, char, char, char, char>’:
+/usr/include/llvm/ADT/SmallVector.h:74:5:   required from ‘class llvm::SmallVectorTemplateCommon<void*, void>’
+/usr/include/llvm/ADT/SmallVector.h:854:60:   required from ‘struct llvm::SmallVectorStorage<void*, 4u>’
+/usr/include/llvm/ADT/SmallVector.h:870:28:   required from ‘class llvm::SmallVector<void*, 4u>’
+/usr/include/llvm/Support/Allocator.h:296:26:   required from here
+/usr/include/llvm/Support/AlignOf.h:251:8: error: ‘Alignment’ is not a member of ‘llvm::AlignOf<llvm::detail::AlignerImpl<void*, char, char, char, char, char, char, char, char, char> >’
+ struct AlignedCharArrayUnion : llvm::AlignedCharArray<
+        ^
+In file included from /usr/include/llvm/ADT/StringMap.h:18:0,
+                 from /usr/include/llvm/Support/Host.h:17,
+                 from /usr/include/llvm/ADT/Hashing.h:49,
+                 from /usr/include/llvm/ADT/ArrayRef.h:13,
+                 from /usr/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /usr/include/llvm/ADT/DenseMap.h:17,
+                 from /usr/include/llvm/IR/DataLayout.h:23,
+                 from /usr/include/llvm/IR/Module.h:21,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/Support/Allocator.h:333:59: error: expected ‘)’ before ‘,’ token
+   void DeallocateSlabs(SmallVectorImpl<void *>::iterator I,
+                                                           ^
+/usr/include/llvm/Support/Allocator.h:334:49: error: invalid use of qualified-name ‘llvm::SmallVectorImpl<void*>::iterator’
+                        SmallVectorImpl<void *>::iterator E) {
+                                                 ^
+/usr/include/llvm/Support/Allocator.h:334:49: error: expected ‘;’ at end of member declaration
+/usr/include/llvm/Support/Allocator.h:334:58: error: ‘E’ does not name a type
+                        SmallVectorImpl<void *>::iterator E) {
+                                                          ^
+/usr/include/llvm/Support/Allocator.h: In constructor ‘llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::BumpPtrAllocatorImpl()’:
+/usr/include/llvm/Support/Allocator.h:145:16: error: ‘nullptr’ was not declared in this scope
+       : CurPtr(nullptr), End(nullptr), BytesAllocated(0), Allocator() {}
+                ^
+/usr/include/llvm/Support/Allocator.h: In constructor ‘llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::BumpPtrAllocatorImpl(T)’:
+/usr/include/llvm/Support/Allocator.h:148:16: error: ‘nullptr’ was not declared in this scope
+       : CurPtr(nullptr), End(nullptr), BytesAllocated(0),
+                ^
+/usr/include/llvm/Support/Allocator.h:149:19: error: ‘forward’ is not a member of ‘std’
+         Allocator(std::forward<T &&>(Allocator)) {}
+                   ^
+/usr/include/llvm/Support/Allocator.h:149:34: error: expected primary-expression before ‘&&’ token
+         Allocator(std::forward<T &&>(Allocator)) {}
+                                  ^
+/usr/include/llvm/Support/Allocator.h:149:36: error: expected primary-expression before ‘>’ token
+         Allocator(std::forward<T &&>(Allocator)) {}
+                                    ^
+/usr/include/llvm/Support/Allocator.h: In destructor ‘llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::~BumpPtrAllocatorImpl()’:
+/usr/include/llvm/Support/Allocator.h:165:27: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘begin’
+     DeallocateSlabs(Slabs.begin(), Slabs.end());
+                           ^
+/usr/include/llvm/Support/Allocator.h:165:42: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘end’
+     DeallocateSlabs(Slabs.begin(), Slabs.end());
+                                          ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>& llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::operator=(llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>)’:
+/usr/include/llvm/Support/Allocator.h:170:27: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘begin’
+     DeallocateSlabs(Slabs.begin(), Slabs.end());
+                           ^
+/usr/include/llvm/Support/Allocator.h:170:42: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘end’
+     DeallocateSlabs(Slabs.begin(), Slabs.end());
+                                          ^
+/usr/include/llvm/Support/Allocator.h:173:14: error: ‘RHS’ was not declared in this scope
+     CurPtr = RHS.CurPtr;
+              ^
+/usr/include/llvm/Support/Allocator.h:176:13: error: ‘move’ is not a member of ‘std’
+     Slabs = std::move(RHS.Slabs);
+             ^
+/usr/include/llvm/Support/Allocator.h:177:24: error: ‘move’ is not a member of ‘std’
+     CustomSizedSlabs = std::move(RHS.CustomSizedSlabs);
+                        ^
+/usr/include/llvm/Support/Allocator.h:178:17: error: ‘move’ is not a member of ‘std’
+     Allocator = std::move(RHS.Allocator);
+                 ^
+/usr/include/llvm/Support/Allocator.h:180:28: error: ‘nullptr’ was not declared in this scope
+     RHS.CurPtr = RHS.End = nullptr;
+                            ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘void llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::Reset()’:
+/usr/include/llvm/Support/Allocator.h:194:15: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘empty’
+     if (Slabs.empty())
+               ^
+/usr/include/llvm/Support/Allocator.h:199:28: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘front’
+     CurPtr = (char *)Slabs.front();
+                            ^
+/usr/include/llvm/Support/Allocator.h:203:21: error: ‘next’ is not a member of ‘std’
+     DeallocateSlabs(std::next(Slabs.begin()), Slabs.end());
+                     ^
+/usr/include/llvm/Support/Allocator.h:203:37: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘begin’
+     DeallocateSlabs(std::next(Slabs.begin()), Slabs.end());
+                                     ^
+/usr/include/llvm/Support/Allocator.h:203:53: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘end’
+     DeallocateSlabs(std::next(Slabs.begin()), Slabs.end());
+                                                     ^
+/usr/include/llvm/Support/Allocator.h:204:11: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘erase’
+     Slabs.erase(std::next(Slabs.begin()), Slabs.end());
+           ^
+/usr/include/llvm/Support/Allocator.h:204:17: error: ‘next’ is not a member of ‘std’
+     Slabs.erase(std::next(Slabs.begin()), Slabs.end());
+                 ^
+/usr/include/llvm/Support/Allocator.h:204:33: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘begin’
+     Slabs.erase(std::next(Slabs.begin()), Slabs.end());
+                                 ^
+/usr/include/llvm/Support/Allocator.h:204:49: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘end’
+     Slabs.erase(std::next(Slabs.begin()), Slabs.end());
+                                                 ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘void* llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::Allocate(size_t, size_t)’:
+/usr/include/llvm/Support/Allocator.h:238:24: error: ‘class llvm::SmallVector<std::pair<void*, long unsigned int>, 0u>’ has no member named ‘push_back’
+       CustomSizedSlabs.push_back(std::make_pair(NewSlab, PaddedSize));
+                        ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘size_t llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::GetNumSlabs() const’:
+/usr/include/llvm/Support/Allocator.h:270:45: error: ‘const class llvm::SmallVector<void*, 4u>’ has no member named ‘size’
+   size_t GetNumSlabs() const { return Slabs.size() + CustomSizedSlabs.size(); }
+                                             ^
+/usr/include/llvm/Support/Allocator.h:270:71: error: ‘const class llvm::SmallVector<std::pair<void*, long unsigned int>, 0u>’ has no member named ‘size’
+   size_t GetNumSlabs() const { return Slabs.size() + CustomSizedSlabs.size(); }
+                                                                       ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘size_t llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::getTotalMemory() const’:
+/usr/include/llvm/Support/Allocator.h:274:15: error: ‘I’ does not name a type
+     for (auto I = Slabs.begin(), E = Slabs.end(); I != E; ++I)
+               ^
+/usr/include/llvm/Support/Allocator.h:274:51: error: expected ‘;’ before ‘I’
+     for (auto I = Slabs.begin(), E = Slabs.end(); I != E; ++I)
+                                                   ^
+/usr/include/llvm/Support/Allocator.h:274:51: error: ‘I’ was not declared in this scope
+/usr/include/llvm/Support/Allocator.h:274:56: error: ‘E’ was not declared in this scope
+     for (auto I = Slabs.begin(), E = Slabs.end(); I != E; ++I)
+                                                        ^
+/usr/include/llvm/Support/Allocator.h:275:58: error: ‘const class llvm::SmallVector<void*, 4u>’ has no member named ‘begin’
+       TotalMemory += computeSlabSize(std::distance(Slabs.begin(), I));
+                                                          ^
+/usr/include/llvm/Support/Allocator.h:276:29: error: range-based ‘for’ loops are not allowed in C++98 mode
+     for (auto &PtrAndSize : CustomSizedSlabs)
+                             ^
+/usr/include/llvm/Support/Allocator.h:277:33: error: request for member ‘second’ in ‘PtrAndSize’, which is of non-class type ‘int’
+       TotalMemory += PtrAndSize.second;
+                                 ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘void llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::PrintStats() const’:
+/usr/include/llvm/Support/Allocator.h:282:46: error: ‘const class llvm::SmallVector<void*, 4u>’ has no member named ‘size’
+     detail::printBumpPtrAllocatorStats(Slabs.size(), BytesAllocated,
+                                              ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘void llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::StartNewSlab()’:
+/usr/include/llvm/Support/Allocator.h:320:54: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘size’
+     size_t AllocatedSlabSize = computeSlabSize(Slabs.size());
+                                                      ^
+/usr/include/llvm/Support/Allocator.h:327:11: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘push_back’
+     Slabs.push_back(NewSlab);
+           ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘void llvm::BumpPtrAllocatorImpl<AllocatorT, SlabSize, SizeThreshold>::DeallocateCustomSizedSlabs()’:
+/usr/include/llvm/Support/Allocator.h:344:29: error: range-based ‘for’ loops are not allowed in C++98 mode
+     for (auto &PtrAndSize : CustomSizedSlabs) {
+                             ^
+/usr/include/llvm/Support/Allocator.h:345:30: error: request for member ‘first’ in ‘PtrAndSize’, which is of non-class type ‘int’
+       void *Ptr = PtrAndSize.first;
+                              ^
+/usr/include/llvm/Support/Allocator.h:346:32: error: request for member ‘second’ in ‘PtrAndSize’, which is of non-class type ‘int’
+       size_t Size = PtrAndSize.second;
+                                ^
+/usr/include/llvm/Support/Allocator.h: In instantiation of ‘class llvm::BumpPtrAllocatorImpl<>’:
+/usr/include/llvm/Support/Allocator.h:364:20:   required from here
+/usr/include/llvm/Support/Allocator.h:261:46: error: type ‘llvm::AllocatorBase<llvm::BumpPtrAllocatorImpl<> >’ is not a base type for type ‘llvm::BumpPtrAllocatorImpl<>’
+   using AllocatorBase<BumpPtrAllocatorImpl>::Allocate;
+                                              ^
+/usr/include/llvm/Support/Allocator.h:268:46: error: type ‘llvm::AllocatorBase<llvm::BumpPtrAllocatorImpl<> >’ is not a base type for type ‘llvm::BumpPtrAllocatorImpl<>’
+   using AllocatorBase<BumpPtrAllocatorImpl>::Deallocate;
+                                              ^
+/usr/include/llvm/Support/Allocator.h: At global scope:
+/usr/include/llvm/Support/Allocator.h:368:53: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   SpecificBumpPtrAllocator(SpecificBumpPtrAllocator &&Old)
+                                                     ^
+/usr/include/llvm/Support/Allocator.h:368:58: error: invalid constructor; you probably meant ‘llvm::SpecificBumpPtrAllocator<T> (const llvm::SpecificBumpPtrAllocator<T>&)’
+   SpecificBumpPtrAllocator(SpecificBumpPtrAllocator &&Old)
+                                                          ^
+/usr/include/llvm/Support/Allocator.h:372:64: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   SpecificBumpPtrAllocator &operator=(SpecificBumpPtrAllocator &&RHS) {
+                                                                ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘llvm::SpecificBumpPtrAllocator<T>& llvm::SpecificBumpPtrAllocator<T>::operator=(llvm::SpecificBumpPtrAllocator<T>)’:
+/usr/include/llvm/Support/Allocator.h:373:17: error: ‘move’ is not a member of ‘std’
+     Allocator = std::move(RHS.Allocator);
+                 ^
+/usr/include/llvm/Support/Allocator.h:373:27: error: ‘RHS’ was not declared in this scope
+     Allocator = std::move(RHS.Allocator);
+                           ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘void llvm::SpecificBumpPtrAllocator<T>::DestroyAll()’:
+/usr/include/llvm/Support/Allocator.h:381:10: error: ‘DestroyElements’ does not name a type
+     auto DestroyElements = [](char *Begin, char *End) {
+          ^
+/usr/include/llvm/Support/Allocator.h:387:15: error: ‘I’ does not name a type
+     for (auto I = Allocator.Slabs.begin(), E = Allocator.Slabs.end(); I != E;
+               ^
+/usr/include/llvm/Support/Allocator.h:387:71: error: expected ‘;’ before ‘I’
+     for (auto I = Allocator.Slabs.begin(), E = Allocator.Slabs.end(); I != E;
+                                                                       ^
+/usr/include/llvm/Support/Allocator.h:387:71: error: ‘I’ was not declared in this scope
+/usr/include/llvm/Support/Allocator.h:387:76: error: ‘E’ was not declared in this scope
+     for (auto I = Allocator.Slabs.begin(), E = Allocator.Slabs.end(); I != E;
+                                                                            ^
+/usr/include/llvm/Support/Allocator.h:390:41: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘begin’
+           std::distance(Allocator.Slabs.begin(), I));
+                                         ^
+/usr/include/llvm/Support/Allocator.h:392:41: error: ‘class llvm::SmallVector<void*, 4u>’ has no member named ‘back’
+       char *End = *I == Allocator.Slabs.back() ? Allocator.CurPtr
+                                         ^
+/usr/include/llvm/Support/Allocator.h:395:33: error: there are no arguments to ‘DestroyElements’ that depend on a template parameter, so a declaration of ‘DestroyElements’ must be available [-fpermissive]
+       DestroyElements(Begin, End);
+                                 ^
+/usr/include/llvm/Support/Allocator.h:398:29: error: range-based ‘for’ loops are not allowed in C++98 mode
+     for (auto &PtrAndSize : Allocator.CustomSizedSlabs) {
+                             ^
+/usr/include/llvm/Support/Allocator.h:399:30: error: request for member ‘first’ in ‘PtrAndSize’, which is of non-class type ‘int’
+       void *Ptr = PtrAndSize.first;
+                              ^
+/usr/include/llvm/Support/Allocator.h:400:32: error: request for member ‘second’ in ‘PtrAndSize’, which is of non-class type ‘int’
+       size_t Size = PtrAndSize.second;
+                                ^
+/usr/include/llvm/Support/Allocator.h:401:78: error: there are no arguments to ‘DestroyElements’ that depend on a template parameter, so a declaration of ‘DestroyElements’ must be available [-fpermissive]
+       DestroyElements((char*)alignAddr(Ptr, alignOf<T>()), (char *)Ptr + Size);
+                                                                              ^
+/usr/include/llvm/Support/Allocator.h: In member function ‘T* llvm::SpecificBumpPtrAllocator<T>::Allocate(size_t)’:
+/usr/include/llvm/Support/Allocator.h:408:60: error: expected primary-expression before ‘>’ token
+   T *Allocate(size_t num = 1) { return Allocator.Allocate<T>(num); }
+                                                            ^
+In file included from /usr/include/llvm/Support/Host.h:17:0,
+                 from /usr/include/llvm/ADT/Hashing.h:49,
+                 from /usr/include/llvm/ADT/ArrayRef.h:13,
+                 from /usr/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /usr/include/llvm/ADT/DenseMap.h:17,
+                 from /usr/include/llvm/IR/DataLayout.h:23,
+                 from /usr/include/llvm/IR/Module.h:21,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/ADT/StringMap.h: At global scope:
+/usr/include/llvm/ADT/StringMap.h:58:31: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   StringMapImpl(StringMapImpl &&RHS)
+                               ^
+/usr/include/llvm/ADT/StringMap.h:58:36: error: invalid constructor; you probably meant ‘llvm::StringMapImpl (const llvm::StringMapImpl&)’
+   StringMapImpl(StringMapImpl &&RHS)
+                                    ^
+/usr/include/llvm/ADT/StringMap.h: In constructor ‘llvm::StringMapImpl::StringMapImpl(unsigned int)’:
+/usr/include/llvm/ADT/StringMap.h:55:18: error: ‘nullptr’ was not declared in this scope
+       : TheTable(nullptr),
+                  ^
+/usr/include/llvm/ADT/StringMap.h: At global scope:
+/usr/include/llvm/ADT/StringMap.h:126:42: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   StringMapEntry(unsigned strLen, InitTy &&V)
+                                          ^
+/usr/include/llvm/ADT/StringMap.h:149:42: error: expected ‘,’ or ‘...’ before ‘&&’ token
+                                 InitType &&InitVal) {
+                                          ^
+/usr/include/llvm/ADT/StringMap.h:179:57: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   static StringMapEntry *Create(StringRef Key, InitType &&InitVal) {
+                                                         ^
+/usr/include/llvm/ADT/StringMap.h: In constructor ‘llvm::StringMapEntry<ValueTy>::StringMapEntry(unsigned int, InitTy)’:
+/usr/include/llvm/ADT/StringMap.h:127:44: error: ‘forward’ is not a member of ‘std’
+       : StringMapEntryBase(strLen), second(std::forward<InitTy>(V)) {}
+                                            ^
+/usr/include/llvm/ADT/StringMap.h:127:63: error: expected primary-expression before ‘>’ token
+       : StringMapEntryBase(strLen), second(std::forward<InitTy>(V)) {}
+                                                               ^
+/usr/include/llvm/ADT/StringMap.h:127:65: error: ‘V’ was not declared in this scope
+       : StringMapEntryBase(strLen), second(std::forward<InitTy>(V)) {}
+                                                                 ^
+/usr/include/llvm/ADT/StringMap.h: In static member function ‘static llvm::StringMapEntry<ValueTy>* llvm::StringMapEntry<ValueTy>::Create(llvm::StringRef, AllocatorTy&, InitType)’:
+/usr/include/llvm/ADT/StringMap.h:162:45: error: ‘forward’ is not a member of ‘std’
+     new (NewItem) StringMapEntry(KeyLength, std::forward<InitType>(InitVal));
+                                             ^
+/usr/include/llvm/ADT/StringMap.h:162:66: error: expected primary-expression before ‘>’ token
+     new (NewItem) StringMapEntry(KeyLength, std::forward<InitType>(InitVal));
+                                                                  ^
+/usr/include/llvm/ADT/StringMap.h:162:68: error: ‘InitVal’ was not declared in this scope
+     new (NewItem) StringMapEntry(KeyLength, std::forward<InitType>(InitVal));
+                                                                    ^
+/usr/include/llvm/ADT/StringMap.h: In static member function ‘static llvm::StringMapEntry<ValueTy>* llvm::StringMapEntry<ValueTy>::Create(llvm::StringRef, InitType)’:
+/usr/include/llvm/ADT/StringMap.h:181:27: error: ‘forward’ is not a member of ‘std’
+     return Create(Key, A, std::forward<InitType>(InitVal));
+                           ^
+/usr/include/llvm/ADT/StringMap.h:181:48: error: expected primary-expression before ‘>’ token
+     return Create(Key, A, std::forward<InitType>(InitVal));
+                                                ^
+/usr/include/llvm/ADT/StringMap.h:181:50: error: ‘InitVal’ was not declared in this scope
+     return Create(Key, A, std::forward<InitType>(InitVal));
+                                                  ^
+/usr/include/llvm/ADT/StringMap.h: At global scope:
+/usr/include/llvm/ADT/StringMap.h:235:34: error: expected ‘)’ before ‘<’ token
+   StringMap(std::initializer_list<std::pair<StringRef, ValueTy>> List)
+                                  ^
+general.cpp:48:1: error: expected ‘}’ at end of input
+ }
+ ^
+In file included from /usr/include/llvm/Support/Host.h:17:0,
+                 from /usr/include/llvm/ADT/Hashing.h:49,
+                 from /usr/include/llvm/ADT/ArrayRef.h:13,
+                 from /usr/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /usr/include/llvm/ADT/DenseMap.h:17,
+                 from /usr/include/llvm/IR/DataLayout.h:23,
+                 from /usr/include/llvm/IR/Module.h:21,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/ADT/StringMap.h:233:21: error: expected unqualified-id at end of input
+       Allocator(A) {}
+                     ^
+/usr/include/llvm/ADT/StringMap.h:233:21: error: expected ‘}’ at end of input
+In file included from /usr/include/llvm/ADT/SmallVector.h:20:0,
+                 from /usr/include/llvm/Support/Allocator.h:24,
+                 from /usr/include/llvm/ADT/StringMap.h:18,
+                 from /usr/include/llvm/Support/Host.h:17,
+                 from /usr/include/llvm/ADT/Hashing.h:49,
+                 from /usr/include/llvm/ADT/ArrayRef.h:13,
+                 from /usr/include/llvm/ADT/DenseMapInfo.h:17,
+                 from /usr/include/llvm/ADT/DenseMap.h:17,
+                 from /usr/include/llvm/IR/DataLayout.h:23,
+                 from /usr/include/llvm/IR/Module.h:21,
+                 from llv.h:6,
+                 from lexer_parser_common.h:11,
+                 from general.cpp:27:
+/usr/include/llvm/Support/MathExtras.h: In instantiation of ‘std::size_t llvm::countLeadingZeros(T, llvm::ZeroBehavior) [with T = unsigned int; std::size_t = long unsigned int]’:
+/usr/include/llvm/Support/MathExtras.h:469:38:   required from here
+/usr/include/llvm/Support/MathExtras.h:181:60: error: ‘static_assert’ was not declared in this scope
+                 "Only unsigned integral types are allowed.");
+                                                            ^
+/usr/include/llvm/Support/MathExtras.h: In instantiation of ‘std::size_t llvm::countLeadingZeros(T, llvm::ZeroBehavior) [with T = long unsigned int; std::size_t = long unsigned int]’:
+/usr/include/llvm/Support/MathExtras.h:475:38:   required from here
+/usr/include/llvm/Support/MathExtras.h:181:60: error: ‘static_assert’ was not declared in this scope
+make: *** [general.o] Error 1

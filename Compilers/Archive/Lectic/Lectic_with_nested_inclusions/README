@@ -1,0 +1,4 @@
+- Run make to fetch lexer.
+- Hashset.{c,h} comes from: https://github.com/avsej/hashset.c and is used to allow more nested inclusion, and in the same time avoid infinite loops on self referenced iclusions.
+It is kind of a frill.
+- On test folder one can find some Edsger tests for lexer. 

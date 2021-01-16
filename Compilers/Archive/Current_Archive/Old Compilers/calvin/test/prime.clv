@@ -1,0 +1,60 @@
+// Calvin program to compute primes
+
+#include "outlib.inc"
+
+void main()
+	integer limit, number, counter;
+
+	integer prime (integer n)
+		integer i;
+	{
+		if (n<0)
+			return prime(-n);
+		if (n<2)
+			return 0;
+		if (n == 2)
+			return 1;
+		if (n % 2 == 0)
+			return 0;
+		i = 3;
+		while (i <= n/2) {
+			if (n % i == 0)
+				return 0;
+			i = i + 2;
+		}
+		return 1;
+	}
+{
+	PutString("Please give the upper limit: ");
+	limit = GetInteger();
+	PutString("Prime numbers between 0 and ");
+	PutInteger(limit);
+	PutString(":\n\n");
+	
+	counter = 0;
+	if (limit >= 2) {
+		counter = counter + 1;
+		PutString("2\n");
+	}
+	if (limit >= 3) {
+		counter = counter + 1;
+		PutString("3\n");
+	}
+	number = 6;
+	while (number <= limit) {
+		if (prime(number-1) > 0) {
+			counter = counter + 1;
+			PutInteger(number - 1);
+			PutString("\n");
+		}
+		if (number != limit && prime(number+1) > 0) {
+			counter = counter + 1;
+			PutInteger(number + 1);
+			PutString("\n");
+		}
+		number = number + 6;
+	}
+	PutString("\n");
+	PutInteger(counter);
+	PutString(" prime number(s) were found.\n\n");
+}

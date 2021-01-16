@@ -1,0 +1,42 @@
+/*
+ * Calvin program to demonstrate character-array
+ * passing and manipulation
+ */
+
+#include "string.inc"
+#include "outlib.inc"
+
+void main()
+	char array[50];
+
+	void swap_string(char source[], char& dest[])
+		void swap(char& x, char &y)
+			char z;
+		{
+			z = x;
+			x = y;
+			y = z;
+		}
+		integer i, x;
+	{
+		// Copy source to destination including the '\0' character
+		i = 0;
+		while (i <= StrLen(source)) {
+			dest[i] = source[i];
+			i = i + 1;
+		}
+
+		// Swap the destination string
+		i = 0;
+		while (i < StrLen(dest)/2) {
+			swap(dest[i], dest[StrLen(dest) - i - 1]);
+			i = i+1;
+		}
+	}
+{
+	swap_string("Hello world from Calvin!", array);
+	PutString("Original String: Hello world from Calvin!\n");
+	PutString("Reverse String: ");
+	PutString(array);
+	PutString("\n\n");
+}

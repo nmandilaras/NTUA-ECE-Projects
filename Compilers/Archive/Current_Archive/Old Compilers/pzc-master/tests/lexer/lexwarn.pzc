@@ -1,0 +1,10 @@
+PROGRAM main() {
+"1: \' \"\\ This is a right string"
+"\
+"
+"\ "
+'\
+'
+'\ '
+"This should be ok"
+}

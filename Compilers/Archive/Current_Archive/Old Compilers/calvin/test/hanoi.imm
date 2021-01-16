@@ -1,0 +1,47 @@
+1: unit, move, -, -
+2: par, "Move from ", V, -
+3: call, -, -, PutString
+4: par, source, V, -
+5: call, -, -, PutString
+6: par, " to ", V, -
+7: call, -, -, PutString
+8: par, target, V, -
+9: call, -, -, PutString
+10: par, ".\n", V, -
+11: call, -, -, PutString
+12: endu, move, -, -
+13: unit, hanoi, -, -
+14: <, rings, 1, 16
+15: jump, -, -, 18
+16: ret, -, -, -
+17: jump, -, -, 33
+18: par, source, V, -
+19: par, auxiliary, V, -
+20: par, target, V, -
+21: -, rings, 1, $1
+22: par, $1, V, -
+23: call, -, -, hanoi
+24: par, source, V, -
+25: par, target, V, -
+26: call, -, -, move
+27: par, auxiliary, V, -
+28: par, target, V, -
+29: par, source, V, -
+30: -, rings, 1, $2
+31: par, $2, V, -
+32: call, -, -, hanoi
+33: endu, hanoi, -, -
+34: unit, main, -, -
+35: par, "Please give the number of rings: ", V, -
+36: call, -, -, PutString
+37: par, $1, RET, -
+38: call, -, -, GetInteger
+39: :=, $1, -, NumberOfRings
+40: par, "\nHere is the solution: \n\n", V, -
+41: call, -, -, PutString
+42: par, "left", V, -
+43: par, "right", V, -
+44: par, "middle", V, -
+45: par, NumberOfRings, V, -
+46: call, -, -, hanoi
+47: endu, main, -, -

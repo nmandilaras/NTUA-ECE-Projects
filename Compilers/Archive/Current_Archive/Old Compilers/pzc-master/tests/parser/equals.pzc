@@ -1,0 +1,4 @@
+PROGRAM hi () {
+	int a = 2 = 5;
+	int b = 2 == 5;
+}

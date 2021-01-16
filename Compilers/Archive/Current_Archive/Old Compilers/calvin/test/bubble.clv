@@ -1,0 +1,58 @@
+#include "outlib.inc"
+
+void main()
+	void BubbleSort(integer & array[], integer size)
+		integer i, changed;
+
+		void swap(integer &x, integer &y)
+			integer t;
+		{
+			t=x;
+			x=y;
+			y=t;
+		}
+	{
+		changed=1;
+		while (changed==1) {
+			i=0;
+			changed=0;
+			while (i < size - 1) {
+				if (array[i] < array[i+1]) {
+					swap(array[i], array[i+1]);
+					changed=1;
+				}
+				i=i+1;
+			}
+		}
+	}
+
+	void PrintArray(char msg[], integer array[], integer size)
+		integer i;
+	{
+		PutString(msg);
+		i=0;
+		while (i < size) {
+			if (i>0)
+				PutString(", ");
+			PutInteger(array[i]);
+			i=i+1;
+		}
+		PutString("\n");
+	}
+
+// Main begins here
+	
+	integer i, x[16], seed;
+
+{
+	i=0;
+	seed=70;
+	while (i<16) {
+		seed = (seed*137+221+i) % 101;
+		x[i] = seed;
+		i=i+1;
+	}
+	PrintArray("Initial Array: ", x, 16);
+	BubbleSort(x,16);
+	PrintArray("Sorted Array: ", x, 16);
+}

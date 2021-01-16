@@ -1,0 +1,8 @@
+objcopy --prefix-symbols sem  sem_full.o sem_full.o
+objcopy --redefine-sym sem_Semantics=Semantics sem_full.o sem_full.o
+g++  -o ir_full.o sem_full.o ir_parser.o ir_lexer.o ir_symbol.o ir_error.o ir_general.o -lfl `llvm-config-3.8 --ldflags` `llvm-config-3.8 --system-libs` `llvm-config-3.8 --libs`
+/usr/bin/ld: error in sem_full.o(.eh_frame); no .eh_frame_hdr table will be created.
+ir_parser.o: In function `codeGen(int, char**)':
+/home/skia/git_comp/Edsger 2.0/Sources/ir_parser.y:2017: undefined reference to `Semantics(char*)'
+collect2: error: ld returned 1 exit status
+make: *** [ir_full.o] Error 1

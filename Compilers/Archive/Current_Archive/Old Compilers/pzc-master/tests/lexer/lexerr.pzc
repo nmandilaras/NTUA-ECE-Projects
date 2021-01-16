@@ -1,0 +1,6 @@
+PROGRAM main() {
+	WRITELN("1: hi there. \' \"\\ This is a right string");
+	WRITELN("2: Hi there again.\ This is another string but wrong");
+	WRITELN("3: This string is wrong too because it extends
+	in multiple lines");
+}
