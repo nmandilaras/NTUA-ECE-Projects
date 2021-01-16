@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hig
+{
+background-color:yellow;
+}
+
+.now
+{
+background-color:#33C4FF;
+}
+
+.counter{
+  right:28px;		
+  height:24px%;
+  top:49px;
+  font-size: 0.8em;
+  position: fixed;
+}
+
+.warning{
+  right:270px;		
+  height: 24px;
+  top:49px;
+  font-size: 1em;
+  position: fixed;
+}
+
+#myInput {
+  right: 0;
+  position: fixed;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 24px;
+  top:35.5px;
+  font-size: 12px;
+  padding: 7px 10px 7px 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#buttonf{
+	background-color:white;
+	border: hidden;
+	right: 1px;
+	top:58px;
+	position: fixed;
+}
+ #buttonb{
+	background-color:white;
+	border: hidden;
+	right: 1px;
+	top:37px;
+	position: fixed;
+}
+</style>
+
+<title>Animals Around the World</title>
+</head>
+<body>
+<input type="text" id="myInput" onkeyup="highlight()" placeholder="Search here.." title="Type in ">
+<span id="counter" class="counter" style="display:none;"></span>
+<span id="warning" class="warning" style="display:none;color:red;font-weight:700;"></span>	
+<button id="buttonb" onclick="backward()"><</button>
+<button id="buttonf" onclick="forward()">></button>
+
+<div id="searchArea">
+
+<p id="demo">The hardship <b>drills this whoop outside</b> any ineffective alphabet. The street skips into the algebra. 
+Outside an apple struggles the creative composite. A dismal stereotype paces underneath a frantic wood.
+ My alarm hums! The struggling rail dresses a terminator.</p>
+ 
+<h2>In no impression assistance contrasted</h2>
+
+<p>Cultivated who resolution connection motionless did occasional. Journey promise if it colonel. Can all mirth abode nor hills added.
+ Them men does for body pure. Far end not }ho[]rses remain siste{}r. Mr parish is to he answer roused piqued afford sussex. 
+ It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest.
+ Off tears are day blind smile alone had.</p>
+
+<p>Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The expense windows adapted sir.
+ Wrong widen drawn ample eat off doors money. Offending belonging promotion provision an be oh consulted ourselves it.
+ Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.</p>
+
+<p>Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature.
+ Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material.
+ Him yourself joy moderate off repeated laughter outweigh screened? ελα μου έλα μου είναι~ .</p>
+
+<p>Respect forming clothes do in he. Course so piqued no an by appear. Themselves reasonable pianoforte so motionless he as difficulty be. 
+Abode way begin ham there power whole. Do unpleasing indulgence impossible to conviction. Suppose neither evident welcome it at do civilly uncivil.
+ Sing tall much you get nor.</p>
+
+<p>Compliment interested discretion estimating on stimulated apartments oh. Dear so sing when in find read of call. 
+As distrusts behaviour abilities defective is. Never at water me might. On formed merits hunted unable merely by mr whence or.
+ Possession the unpleasing simplicity her uncommonly.</p>
+
+<p>Dwelling and speedily ignorant any steepest. Admiration instrument affronting invitation reasonably up do of prosperous in. 
+Shy saw declared age debating ecstatic man. Call in so want pure rank am dear were. Remarkably to continuing in surrounded diminution on. In unfeeling existence objection immediate repulsive on he in. Imprudence comparison uncommonly me he difficulty diminution resolution. Likewise proposal differed scarcely dwelling as on raillery. September few dependent extremity own continued and ten prevailed attending. Early to weeks we could.</p>
+
+<p>In to am attended desirous raptures declared diverted confined at. Collected instantly remaining up certainly to necessary as. 
+Over walk dull into son boy door went new. At or happiness commanded daughters as. Is handsome an declared at received in extended vicinity subjects. Into miss on he over been late pain an. Only week bore boy what fat case left use. Match round scale now sex style far times. Your me past an much.</p>
+
+<p>New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. 
+See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</p>
+
+<p>Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.</p>
+<p>Cultivated who resolution connection motionless did occasional. Journey promise if it colonel. Can all mirth abode nor hills added.
+ Them men does for body pure. Far end not }ho[]rses remain siste{}r. Mr parish is to he answer roused piqued afford sussex. 
+ It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest.
+ Off tears are day blind smile alone had.</p>
+
+<p>Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The expense windows adapted sir.
+ Wrong widen drawn ample eat off doors money. Offending belonging promotion provision an be oh consulted ourselves it.
+ Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.</p>
+
+<p>Far concluded not his something extremity. Want four we face an he gate. On he of played he ladies answer little though nature.
+ Blessing oh do pleasure as so formerly. Took four spot soon led size you. Outlived it received he material.
+ Him yourself joy moderate off repeated laughter outweigh screened? ελα μου έλα μου είναι~ .</p>
+
+<p>Respect forming clothes do in he. Course so piqued no an by appear. Themselves reasonable pianoforte so motionless he as difficulty be. 
+Abode way begin ham there power whole. Do unpleasing indulgence impossible to conviction. Suppose neither evident welcome it at do civilly uncivil.
+ Sing tall much you get nor.</p>
+
+<p>Compliment interested discretion estimating on stimulated apartments oh. Dear so sing when in find read of call. 
+As distrusts behaviour abilities defective is. Never at water me might. On formed merits hunted unable merely by mr whence or.
+ Possession the unpleasing simplicity her uncommonly.</p>
+
+<p>Dwelling and speedily ignorant any steepest. Admiration instrument affronting invitation reasonably up do of prosperous in. 
+Shy saw declared age debating ecstatic man. Call in so want pure rank am dear were. Remarkably to continuing in surrounded diminution on. In unfeeling existence objection immediate repulsive on he in. Imprudence comparison uncommonly me he difficulty diminution resolution. Likewise proposal differed scarcely dwelling as on raillery. September few dependent extremity own continued and ten prevailed attending. Early to weeks we could.</p>
+
+<p>In to am attended desirous raptures declared diverted confined at. Collected instantly remaining up certainly to necessary as. 
+Over walk dull into son boy door went new. At or happiness commanded daughters as. Is handsome an declared at received in extended vicinity subjects. Into miss on he over been late pain an. Only week bore boy what fat case left use. Match round scale now sex style far times. Your me past an much.</p>
+
+<p>New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. 
+See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</p>
+
+<p>Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.</p>
+ 
+ <p>Respect forming clothes do in he. Course so piqued no an by appear. Themselves reasonable pianoforte so motionless he as difficulty be. 
+Abode way begin ham there power whole. Do unpleasing indulgence impossible to conviction. Suppose neither evident welcome it at do civilly uncivil.
+ Sing tall much you get nor.</p>
+
+ <p>Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.</p>
+ 
+ <p>Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.</p>
+ 
+ <p>Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.</p>
+ 
+ 
+<p>Compliment interested discretion estimating on stimulated apartments oh. Dear so sing when in find read of call. 
+As distrusts behaviour abilities defective is. Never at water me might. On formed merits hunted unable merely by mr whence or.
+ Possession the unpleasing simplicity her uncommonly.</p>
+
+<p>Dwelling and speedily ignorant any steepest. Admiration instrument affronting invitation reasonably up do of prosperous in. 
+Shy saw declared age debating ecstatic man. Call in so want pure rank am dear were. Remarkably to continuing in surrounded diminution on. In unfeeling existence objection immediate repulsive on he in. Imprudence comparison uncommonly me he difficulty diminution resolution. Likewise proposal differed scarcely dwelling as on raillery. September few dependent extremity own continued and ten prevailed attending. Early to weeks we could.</p>
+
+<p>In to am attended desirous raptures declared diverted confined at. Collected instantly remaining up certainly to necessary as. 
+Over walk dull into son boy door went new. At or happiness commanded daughters as. Is handsome an declared at received in extended vicinity subjects. Into miss on he over been late pain an. Only week bore boy what fat case left use. Match round scale now sex style far times. Your me past an much.</p>
+
+<p>New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. 
+See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</p>
+
+<p>Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.</p>
+ 
+ <p>New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. 
+See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</p>
+
+<p>Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.</p>
+ 
+ <p>Respect forming clothes do in he. Course so piqued no an by appear. Themselves reasonable pianoforte so motionless he as difficulty be. 
+Abode way begin ham there power whole. Do unpleasing indulgence impossible to conviction. Suppose neither evident welcome it at do civilly uncivil.
+ Sing tall much you get nor.</p>
+
+<p>Compliment interested discretion estimating on stimulated apartments oh. Dear so sing when in find read of call. 
+As distrusts behaviour abilities defective is. Never at water me might. On formed merits hunted unable merely by mr whence or.
+ Possession the unpleasing simplicity her uncommonly.</p>
+
+<p>Dwelling and speedily ignorant any steepest. Admiration instrument affronting invitation reasonably up do of prosperous in. 
+Shy saw declared age debating ecstatic man. Call in so want pure rank am dear were. Remarkably to continuing in surrounded diminution on. In unfeeling existence objection immediate repulsive on he in. Imprudence comparison uncommonly me he difficulty diminution resolution. Likewise proposal differed scarcely dwelling as on raillery. September few dependent extremity own continued and ten prevailed attending. Early to weeks we could.</p>
+
+<p>In to am attended desirous raptures declared diverted confined at. Collected instantly remaining up certainly to necessary as. 
+Over walk dull into son boy door went new. At or happiness commanded daughters as. Is handsome an declared at received in extended vicinity subjects. Into miss on he over been late pain an. Only week bore boy what fat case left use. Match round scale now sex style far times. Your me past an much.</p>
+
+<p>New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. 
+See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</p>
+
+<p>Arrived totally in as between private. Favour of so as on pretty though elinor direct.
+ Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley.
+ Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. 
+ Goodness did suitable learning put.</p>
+
+ </div>
+</body>
+<script>
+	var i=-1;
+	var counter = document.getElementById('counter');
+	var str = document.getElementById("searchArea");
+	var input = document.getElementById("myInput");
+	var warning = document.getElementById('warning');
+	var list = document.getElementsByTagName("em");
+
+	function highlight() {
+		i=-1;
+		var called = false;
+		warning.style.display = 'none';
+		counter.style.display = 'none';
+		var text = input.value;
+		for (var k=list.length-1; k > -1; k--) { //clean old search results
+			temp =  list[k].parentNode.innerHTML; 
+			index0=temp.indexOf("<em");
+			index1=temp.indexOf("</em>");
+			res = temp.substring(0,index0) + temp.substring(index0+16,index1) + temp.substring(index1+5);
+			list[k].parentNode.innerHTML = res;	
+		}	
+		if (text.length>2) {
+			try {
+				RegExp(text);
+			} catch(e) {
+				warning.innerHTML = 'Invalid regex!';
+				warning.style.display = 'inline';
+				return;
+			}
+				tempt = text.toUpperCase();
+				filtering = str.innerText;
+				filter = str.innerHTML;
+				res="";
+				index0 =filtering.toUpperCase().indexOf(tempt)
+				while(index0 >=0 ) {
+					index1 = filter.toUpperCase().indexOf(tempt);
+					if(index1 >=0) {
+						res += filter.substring(0,index1) + "<em class=\"hig\">" + filter.substring(index1,index1+text.length) + "</em>" ;
+						filter = filter.substring(index1+ text.length);
+						called = true;
+					} 
+					else break; // else we need special treatment
+					filtering=filtering.substring(index0+text.length);
+					index0 = filtering.toUpperCase().indexOf(tempt);
+				}
+			if (!called) {
+				warning.innerHTML = 'No matches :(';
+				warning.style.display = 'inline';
+			}
+			else {
+				res+=filter; 
+				str.innerHTML = res; 
+				forward();
+			}
+		}
+	}
+	
+	function forward(){
+		if(list.length>0){
+			if (i< list.length-1) i++;
+			else {
+				list[i].className = "hig"; 
+				i=0; 
+			}
+			counter.innerHTML = (i+1) +' of '+list.length;
+			counter.style.display = 'inline';			
+			list[i].className="now";
+			if(i>0) list[i-1].className = "hig";
+			window.scroll(0,recursive(list[i])-20);
+		}
+	}
+
+	function recursive(element) {
+		var top = 0;
+		do {
+			top += element.offsetTop  || 0;
+			element = element.offsetParent;
+		} while(element);
+		return top;
+	};
+
+	function backward(){
+		if(list.length>0){
+			if(i>0) i--;
+			else{
+				list[i].className = "hig"; 
+				i=list.length-1; 
+			}
+			counter.innerHTML = (i+1) +' of '+list.length;
+			counter.style.display = 'inline';				
+			list[i].className="now";
+			if (i<list.length-1) list[i+1].className = "hig";
+			window.scroll(0,recursive(list[i])-20);
+		}
+	}
+</script> 
+</html> 

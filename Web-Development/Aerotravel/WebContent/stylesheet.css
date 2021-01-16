@@ -1,0 +1,142 @@
+body{
+	border: 5px solid #3c697e;
+	font-family:Open Sans;
+	font-size:25px;
+	text-align:center;
+	/*height:50px;
+	width:150px; */
+	background-color:#f8f0e2;
+	border-radius:10px;
+}
+
+p{
+	font-size:40px;
+}
+
+div{
+	font-family:Open Sans;
+	font-size:25px;
+	text-align:center;
+}
+
+/*
+div h2{
+	width:65px;
+	border:3px dashed #3c697e;
+	text-align:left;
+	font-family:Harrington;
+	background-color:#d9d5ce;
+	border-radius:10px;
+}
+
+div h3{
+	height:200px;
+	width:300px;
+	border:3px solid #3c697e;
+	text-align:center;
+	font-family:Open Sans;
+	background-color:#d9d5ce;
+	border-radius:10px;
+	font-size:25px;
+}
+*/
+a{
+	/*text-decoration:none;*/
+	color:black;
+}
+
+a:hover{
+	color:#ab032f;
+}
+
+a:visited{
+    color: green;
+}
+
+select {
+    width: 25%; /* Set width. Do not set height else it will fail in IE8-10. Use padding for height. */
+    color: #f11338;
+	font-family:Book Antiqua;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height:1.2em;
+    margin-left:11%; 
+    padding: 6px ; /* use this to set a specific height for your dropdown (DO NOT use the attribute 'height') */
+    border: 5px solid #91081a;
+	border-radius:10%;
+    cursor: pointer;
+    text-indent: 0.01px;
+    text-overflow: "";
+    -webkit-appearance: none; /* gets rid of default appearance in Webkit browsers*/
+    -moz-appearance: none; /* Get rid of default appearance for older Firefox browsers */
+    appearance: none;
+}
+select option {
+    background: #f2f1fe; /* style the dropdown bg color */
+}
+
+INPUT{
+	width: 25%; /* Set width. Do not set height else it will fail in IE8-10. Use padding for height. */
+    color: #f11338;
+	font-family:Verdana;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height:1.2em;
+ /*   margin-left:38%; */
+    padding: 6px; /* use this to set a specific height for your dropdown (DO NOT use the attribute 'height') */
+    border: 5px solid #91081a;
+	border-radius:10%;
+    text-indent: 0.01px;
+    text-overflow: "";
+    -webkit-appearance: none; /* gets rid of default appearance in Webkit browsers*/
+    -moz-appearance: none; /* Get rid of default appearance for older Firefox browsers */
+    appearance: none;
+}
+
+button{
+	width: 25%; /* Set width. Do not set height else it will fail in IE8-10. Use padding for height. */
+    color: #f11338;
+	font-family:Verdana;
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height:1.2em;
+ /*   margin-left:38%; */
+    padding: 6px; /* use this to set a specific height for your dropdown (DO NOT use the attribute 'height') */
+    border: 5px solid #91081a;
+	border-radius:10%;
+    text-indent: 0.01px;
+    text-overflow: "";
+    -webkit-appearance: none; /* gets rid of default appearance in Webkit browsers*/
+    -moz-appearance: none; /* Get rid of default appearance for older Firefox browsers */
+    appearance: none;
+}
+
+inputs:-webkit-input-placeholder {
+    color: #470b0f;
+}
+
+inputs-moz-placeholder {
+    color: #470b0f;
+}
+
+.inputs {
+    background: #d9d5ce;
+	color:#0f1162;
+    font-size: 1.1rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px; 
+    width: 300px;
+	/*margin-left:38%; */
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 3px rgba( 0, 0, 0, 0.1 );
+    clear: both;
+}
+
+.inputs:focus {
+    background: #d9d5ce;
+    box-shadow: 0 0 0 3px #91081a, inset 0 2px 3px rgba( 0, 0, 0, 0.2 ), 0px 5px 5px rgba( 0, 0, 0, 0.15 );
+    outline: none;
+}

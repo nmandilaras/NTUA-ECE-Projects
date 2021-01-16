@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Movies</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>movies</display-name>
+    <servlet-name>movies</servlet-name>
+    <servlet-class>movies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>movies</servlet-name>
+    <url-pattern>/movies</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>showMovies</display-name>
+    <servlet-name>showMovies</servlet-name>
+    <servlet-class>showMovies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showMovies</servlet-name>
+    <url-pattern>/showMovies</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addRate</display-name>
+    <servlet-name>addRate</servlet-name>
+    <servlet-class>addRate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addRate</servlet-name>
+    <url-pattern>/addRate</url-pattern>
+  </servlet-mapping>
+</web-app>

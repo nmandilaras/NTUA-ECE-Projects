@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>bankSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>credentials</display-name>
+    <servlet-name>credentials</servlet-name>
+    <servlet-class>credentials</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>credentials</servlet-name>
+    <url-pattern>/credentials</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>confirm</display-name>
+    <servlet-name>confirm</servlet-name>
+    <servlet-class>confirm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>confirm</servlet-name>
+    <url-pattern>/confirm</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addTrans</display-name>
+    <servlet-name>addTrans</servlet-name>
+    <servlet-class>addTrans</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addTrans</servlet-name>
+    <url-pattern>/addTrans</url-pattern>
+  </servlet-mapping>
+    <filter>
+    <display-name>filter</display-name>
+    <filter-name>filter</filter-name>
+    <filter-class>filter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>filter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>  
+</web-app>

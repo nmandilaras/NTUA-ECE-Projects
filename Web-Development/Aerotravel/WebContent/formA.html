@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>  <TITLE>Κλείστε τα εισητήριά τώρα! </TITLE> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Content-Language" content="el">
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+</HEAD>
+<body>
+
+<p><br>Επιλέξτε προορισμό και ημερομηνία ταξιδιού</p>
+
+<form action="firstServletDemo" method="post">
+Από: <select name="from">
+	<option value="Athens"> Athens</option>
+	<option value="Thessaloniki">Thessaloniki</option>
+	<option value="Patra">Patra</option>
+	<option value="Santorini">Santorini</option>
+	<option value="Naxos">Naxos</option>	
+	<option value="Rome">Rome</option>
+	<option value="Napoli">Napoli</option>
+	<option value="Milano">Milano</option>
+	</select>
+	<br>
+Για: <select name="to">
+	<option value="Rome">Rome</option>
+	<option value="Napoli">Napoli</option>
+	<option value="Milano">Milano</option>
+	<option value="Athens"> Athens</option>
+	<option value="Thessaloniki">Thessaloniki</option>
+	<option value="Patra">Patra</option>
+	<option value="Santorini">Santorini</option>
+	<option value="Naxos">Naxos</option>	
+
+	</select>
+	<br>	
+Αριθμός Επιβατών: <input type="number" min="1" max="100" name="passengers" required> <br>
+Μέρα Αναχώρησης: <input type="date" name="departure" min="2016-03-31" max="2018-01-01" required> <br><br>
+<input type="submit" value="Καταχώρηση"> <input type="reset" value="Επαναφορά"> 
+</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login In!</title>
+</head>
+<script type="text/javascript">
+
+function loadXMLDoc(){
+	if (check()) return;
+	if (window.XMLHttpRequest)
+  		xmlhttp=new XMLHttpRequest();
+	else if (window.ActiveXObject)// code for IE6, IE5
+  		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	else {
+		alert("Your browser does not support AJAX.");
+		return;
+	}
+	xmlhttp.onreadystatechange=setWarning;
+	xmlhttp.open("GET","http://localhost:8080/Movies/movies?userName=" + document.getElementById('userName').value,true); //can we reduce the link to movies ?
+	xmlhttp.send();   //in the case of post:  xmlhttp.send(string_to_be_sent_as_body_of_POST)
+	}
+	
+function setWarning(){ // actions that we do when ajax call returns
+		if (xmlhttp.readyState==4 && xmlhttp.status==200){
+			if(xmlhttp.responseText === "ok"){
+				window.location = "http://localhost:8080/Movies/showMovies";	
+			}
+			else{
+				warning = document.getElementById("warning");
+				warning.innerHTML = xmlhttp.responseText;
+				warning.style.display = 'inline';
+			}
+		}
+	}
+	
+function check(){
+	text = document.getElementById("userName").value;
+	if (text == ""){
+		alert("Please fill in your username to continue");
+		return true;
+	}
+	return false;
+}	
+
+</script>
+<body>    
+   	   <br>Insert your userName!<br><br>
+   	   <span id="warning" class="warning" style="display:none;color:red;font-weight:700;"></span><br> 
+       <input type="text" class="inputs" placeholder="userName" id="userName" name="userName" required>
+       <button onclick="loadXMLDoc()" >Submit</button>
+</body>
+</html>

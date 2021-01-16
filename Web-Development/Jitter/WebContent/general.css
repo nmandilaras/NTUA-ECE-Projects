@@ -1,0 +1,224 @@
+.heading {
+  z-index: 1;
+  position: fixed;
+  height: 50px;
+}
+
+#myInput {
+  right: 2px;
+  position: fixed;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 24px;
+  top:10px;
+  font-size: 12px;
+  padding: 4px 4px 4px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 4px;
+    z-index: 2;
+}
+
+.profil{
+  color : white;
+  right: 300px;
+  position: fixed;
+  top:-7px;
+  font-size: 18px;
+  border-radius: 0px;
+  text-decoration : none;	
+  z-index: 2;
+}
+
+.searchB{
+  right: 2px;
+  position: fixed;
+  background-image: url('searchicon.png');
+  background-size: contain;
+  top:11px;
+  width: 34px;
+  height: 32px;
+  border-radius: 0px;
+  border: 1px solid #ddd;
+    z-index: 2;
+}
+
+.sign{
+  color : white;
+  right: 100px;
+  position: fixed;
+  top:-7px;
+  font-size: 18px;
+  border-radius: 0px;
+  text-decoration : none;	
+}
+
+.logB{
+  right: 10px;
+  position: fixed;
+  top:70px;
+  border: 1px solid #ddd;
+}
+
+BODY
+{
+	background-color : White;	
+	margin-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;	
+}
+
+P
+{
+	font-family : Segoe UI, Trebuchet MS, Verdana, Helvetica, Arial;
+	font-size : 16px;
+	line-height: 16px;
+}
+
+DIV
+{	
+	color : dimgray;
+	font-family : Segoe UI, Trebuchet MS, Verdana, Helvetica, Arial;
+	font-size : 24px;
+	opacity: 1;		
+	line-height: 24px;
+}
+
+SPAN
+{
+	color : dimgray;
+	font-family : Segoe UI, Trebuchet MS, Verdana, Helvetica, Arial;
+	font-size : 16px;
+	opacity: 1;		
+	line-height: 16px;	
+}
+
+H1
+{	
+	color : White;
+	font-family : Segoe UI, Trebuchet MS, Verdana, Helvetica, Arial;
+	font-size : 28px;
+	line-height : 28px;
+	margin:0 1px;
+}
+
+INPUT{
+	border-radius: 4px;
+    padding:4px;
+}
+
+.form-textbox, .form-textarea, .form-dropdown, .form-list, .inputs{
+	font-family: Lucida Grande, sans-serif;
+    padding:4px;
+	border-radius: 4px;
+}
+
+.containerW{
+	background-color: beige;
+	width: 440px;
+	height: 140px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+
+A
+{
+	font-family : Segoe UI, Trebuchet MS, Verdana, Helvetica, Arial;
+	font-size : 14px;
+	font-weight : bold;
+	text-decoration : none;	
+}
+
+button
+{
+	color: black;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	padding:4px 8px 4px 8px;
+	font-size:16px;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-webkit-transform: translateZ(0);
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;		
+}
+
+button:hover
+{
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	background: #016ABC;
+	-ms-transform: scale(1.1);
+	-webkit-transform: translateZ(0);
+	-webkit-transition-duration: 0.3s ease-out;	
+	-moz-transition-duration: 0.3s ease-out;	
+	-ms-transition-duration: 0.3s ease-out;
+	-o-transition-duration: 0.3s ease-out;
+	transition-duration: 0.3s ease-out;	
+}
+
+.form-all{
+    margin:0px auto;
+    padding-top:0px;
+    width:680px;
+    font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana, sans-serif;
+    font-size:16px;
+}
+
+.form-label {
+	display: inline-block;
+    font-family: Lucida Grande, sans-serif;
+	padding:3px;
+    white-space:normal;
+    vertical-align: top;
+}
+
+.form-label-left {
+	display: inline-block;
+    text-align:left;
+    padding: 3px;
+    white-space:normal;
+}
+
+.form-label-right {
+    display:inline-block;
+    text-align:right;
+    padding:3px;
+    white-space:normal;
+    vertical-align: top;
+}	
+
+.form-label-left, .form-label-right {
+      width: 110px;
+}
+
+.form-label {
+      width: 390px;
+}
+
+.form-line {
+	clear:both;
+	padding:10px;
+	margin:0px;
+	margin-bottom:20px;
+    display:block;
+    width:97%;
+    width:-moz-available;
+	position:relative;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+
+.form-section {
+    list-style:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+    position:relative;
+    zoom:1;
+    clear:both;	
+}
