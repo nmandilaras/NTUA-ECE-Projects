@@ -1,0 +1,19 @@
+Total Instructions: 7659818263
+
+
+Branch Predictors: (Name - Correct - Incorrect)
+  Nbit-8K-4: 65717936 10786597
+  Pentium-M: 65073976 11430557
+  Not-Taken-: 40739577 35764956
+  BTFNT-: 57595559 18908974
+  Local-4K-4: 65189085 11315448
+  Local-2K-8: 64183667 12320866
+  Ghp-1K-2-4: 65509670 10994863
+  Ghp-0.0625K-2-8: 64492932 12011601
+  Ghp-0.5K-4-4: 66202702 10301831
+  Ghp-0.03125K-4-8: 64088373 12416160
+  Hd-Nbit-4K-4-Ghp-1K-2-3: 65844921 10659612
+  Hd-Nbit-4K-4-Local-2K-4: 65941032 10563501
+  Hd-Ghp-1K-2-3-Local-2K-4: 66457973 10046560
+
+BTB Predictors: (Name - Correct - Incorrect - TargetCorrect)

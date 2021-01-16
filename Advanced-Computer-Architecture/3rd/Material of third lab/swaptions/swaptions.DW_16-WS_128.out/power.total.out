@@ -1,0 +1,19 @@
+                     Power     Energy    Energy %
+  core-core       212.99 W     0.14  J     92.22%
+  core-ifetch       2.25 W     1.47 mJ      0.97%
+  core-alu          0.38 W     0.25 mJ      0.16%
+  core-int          1.20 W     0.78 mJ      0.52%
+  core-fp           1.01 W     0.66 mJ      0.44%
+  core-mem          0.96 W     0.63 mJ      0.42%
+  core-other        1.20 W     0.79 mJ      0.52%
+  icache            0.63 W     0.42 mJ      0.27%
+  dcache            2.01 W     1.32 mJ      0.87%
+  l2                0.43 W     0.28 mJ      0.18%
+  l3                3.38 W     2.21 mJ      1.46%
+  nuca              0.00 W     0.00  J      0.00%
+  noc               0.03 W     0.02 mJ      0.01%
+  dram              4.48 W     2.93 mJ      1.94%
+
+  core            220.00 W     0.14  J     95.25%
+  cache             6.45 W     4.22 mJ      2.79%
+  total           230.96 W     0.15  J    100.00%
