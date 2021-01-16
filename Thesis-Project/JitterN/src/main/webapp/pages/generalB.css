@@ -1,0 +1,12 @@
+body { 
+	padding-top: 70px; 
+}
+
+.navbar-default{
+    background-color:#99c2ff;
+    border-color: #99c2ff;
+}
+
+.color-me{
+    color:#000066 !important;
+}

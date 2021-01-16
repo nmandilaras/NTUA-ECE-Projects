@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.simple</groupId>
+  <artifactId>no-spark</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <properties>
+  	  	<org.springframework-version>4.3.11.RELEASE</org.springframework-version>
+  </properties>
+  <dependencies>    
+	 <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>${org.springframework-version}</version>
+      <exclusions>
+         <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+         </exclusion>
+      </exclusions>	    
+	</dependency>
+	<dependency>
+	    <groupId>org.springframework.data</groupId>
+	    <artifactId>spring-data-mongodb</artifactId>
+	    <version>1.8.1.RELEASE</version>
+      <exclusions>
+         <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+         </exclusion>
+      </exclusions>	    
+	</dependency>	
+</dependencies>
+  
+<build>
+<plugins>
+	<plugin>
+	  <artifactId>maven-assembly-plugin</artifactId>
+	  <configuration>
+	    <archive>
+	      <manifest>
+	        <mainClass>noSpark.Main</mainClass>
+	      </manifest>
+	    </archive>
+	    <descriptorRefs>
+	      <descriptorRef>jar-with-dependencies</descriptorRef>
+	    </descriptorRefs>
+	  </configuration>
+	  <executions>
+	    <execution>
+	      <id>make-assembly</id> 
+	      <phase>package</phase> 
+	      <goals>
+	        <goal>single</goal>
+	      </goals>
+	    </execution>
+	  </executions>
+	</plugin>
+</plugins>
+</build>
+</project>

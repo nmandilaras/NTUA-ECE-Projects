@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login In!</title>
+<link type='text/css' rel='Stylesheet' href='general.css' />
+</head>
+<script type="text/javascript">
+
+function loadXMLDoc(){
+	if (check()) return;
+	if (window.XMLHttpRequest)
+  		xmlhttp=new XMLHttpRequest();
+	else if (window.ActiveXObject)// code for IE6, IE5
+  		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	else {
+		alert("Your browser does not support AJAX.");
+		return;
+	}
+	xmlhttp.onreadystatechange=setWarning;
+	xmlhttp.open("GET","/JitterN/Login?info=log&userName=" + document.getElementById('userName').value + "&password=" + document.getElementById('password').value,true); 
+	xmlhttp.send();   //in the case of post:  xmlhttp.send(string_to_be_sent_as_body_of_POST)
+	}
+	
+function setWarning(){ // actions that we do when ajax call returns
+		if (xmlhttp.readyState==4 && xmlhttp.status==200){
+			if(xmlhttp.responseText === "ok"){
+				window.location = "/JitterN/Home";	
+			}
+			/*else if(xmlhttp.responseText === "admin"){
+				window.location = "http://localhost:8080/bankSystem/confirm";	
+			}*/			
+			else if (xmlhttp.responseText === "userName"){
+				warning = document.getElementById("warning");
+				warning.innerHTML = "Username doesn't exist, do you want to <a href=sign.html>sign up</a>?";
+				warning.style.display = 'inline';
+			}
+			else if (xmlhttp.responseText === "password"){
+				warning = document.getElementById("warning");
+				warning.innerHTML = "Wrong password please try again";
+				warning.style.display = 'inline';
+			}			
+		}
+	}
+	
+function check(){
+	
+	username = document.getElementById("userName").value;
+	password = document.getElementById("password").value;
+	if (username == ""){
+		alert("Please fill in your username to continue");
+		return true;
+	}
+	else if (password == ""){
+		alert("Please fill in your password to continue");
+		return true;
+	}
+	return false;
+}	
+
+</script>
+<body>    
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="1" style="background-image:url(gradient.png); background-repeat: repeat-x"><img src="JitterlogoF.png" border="0" alt="Jitterlogo" height="50" width="50" /></td><td width="100%" style="background-image:url(gradient.png); background-repeat: repeat-x; text-align:left"><h1 align="left">&nbsp Jitter </h1></td></tr></table>
+		<a class='sign' href='sign.html'><h4>Sign up</h4></a>
+		<div align="center">
+				<h2> Welcome to Jitter! </h2>
+				<h3> Please sign in to continue </h3>
+				<span id="warning" class="warning" style="display:none;color:red;font-weight:700;"></span><br> 		
+				<table border="0">		
+					<tr>
+						<td>Username: &nbsp;</td>
+						<td><input type="text" class="inputs" placeholder="" id="userName" name="userName"  value='joanna' required></td>		
+					</tr>
+					<tr>
+						<td>Password: &nbsp; </td>
+						<td><input type="password" class="inputs" placeholder="" id="password" name="password" value='mylove' required></td>
+					</tr>		
+					<tr>
+						<td colspan="2" align="center">
+							<button onclick="loadXMLDoc()" >Submit</button>
+						</td>
+					</tr>
+				</table>    
+		</div>       
+</body>
+</html>
