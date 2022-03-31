@@ -8,7 +8,7 @@
   <name>JitterN Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-  	<org.springframework-version>4.3.11.RELEASE</org.springframework-version>
+  	<org.springframework-version>5.3.18</org.springframework-version>
   	<jackson.databind-version>2.2.3</jackson.databind-version>
   	<log4j.version>1.2.17</log4j.version>
   </properties>
