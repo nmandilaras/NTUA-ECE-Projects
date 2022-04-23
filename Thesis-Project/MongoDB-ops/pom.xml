@@ -4,7 +4,7 @@
   <artifactId>no-spark</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <properties>
-  	  	<org.springframework-version>4.3.11.RELEASE</org.springframework-version>
+  	  	<org.springframework-version>5.3.19</org.springframework-version>
   </properties>
   <dependencies>    
 	 <dependency>
